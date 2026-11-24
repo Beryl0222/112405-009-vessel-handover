@@ -17,6 +17,46 @@
       "lang": "zh",
       "text": "定位每隔几分钟丢一次，时间未记录。",
       "kind": "equipment-note"
+    },
+    {
+      "id": "VH-10",
+      "kind": "register",
+      "text": "V2呼号HAI-5在本月使用，旧船V3曾用同呼号至上月月底；当月海五和调查五号指V2。"
+    },
+    {
+      "id": "VH-11",
+      "kind": "weather",
+      "text": "V2十时风仍西向，十时二十分转东；这仅是风向事实，不是岸站许可。"
+    },
+    {
+      "id": "VH-12",
+      "kind": "equipment",
+      "text": "设备员补记定位丢失为09:40至10:10，10:15重新稳定；补记写于11:00。"
+    },
+    {
+      "id": "VH-13",
+      "kind": "clearance",
+      "text": "岸站10:25正式确认V2可在定位稳定条件下移锚，前述VH6只为建议。"
+    },
+    {
+      "id": "VH-14",
+      "kind": "completed-track",
+      "text": "V2于10:05已移锚一次，实际航迹已登记，当时许可情况不明。"
+    },
+    {
+      "id": "VH-15",
+      "kind": "action-card",
+      "text": "交班卡A1计划10:30再次移锚，引用船长条件及待岸站确认；A2安排停机检查，与风向无关。"
+    },
+    {
+      "id": "VH-16",
+      "kind": "translation",
+      "text": "英文摘要称Shore cleared movement after the gust，未保留no clearance has been issued。"
+    },
+    {
+      "id": "VH-17",
+      "kind": "equipment-update",
+      "text": "10:28定位又间歇，设备员请求暂缓A1；未影响A2的人工检查条件。"
     }
   ],
   "vessels": [
@@ -29,5 +69,26 @@
       ]
     }
   ],
-  "case_id": "vessel-5"
+  "case_id": "vessel-5",
+  "context": {
+    "actions": [
+      {
+        "id": "A1",
+        "state": "pending",
+        "source": "VH-15"
+      },
+      {
+        "id": "A2",
+        "state": "pending",
+        "source": "VH-15"
+      }
+    ],
+    "tracks": [
+      {
+        "id": "TRACK1",
+        "state": "completed",
+        "source": "VH-14"
+      }
+    ]
+  }
 }
