@@ -1,0 +1,33 @@
+{
+  "records": [
+    {
+      "id": "VH-5",
+      "lang": "zh",
+      "text": "风转东后再移锚，未收到岸站确认前维持现位。",
+      "kind": "captain-note"
+    },
+    {
+      "id": "VH-6",
+      "lang": "en",
+      "text": "Shore suggests moving after the current gust; no clearance has been issued.",
+      "kind": "radio-summary"
+    },
+    {
+      "id": "VH-7",
+      "lang": "zh",
+      "text": "定位每隔几分钟丢一次，时间未记录。",
+      "kind": "equipment-note"
+    }
+  ],
+  "vessels": [
+    {
+      "id": "V-2",
+      "callsign": "HAI-5",
+      "aliases": [
+        "海五",
+        "调查五号"
+      ]
+    }
+  ],
+  "case_id": "vessel-5"
+}
