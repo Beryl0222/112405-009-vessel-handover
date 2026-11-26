@@ -1,0 +1,4082 @@
+{
+  "schema_version": "voyage-handover/1.0",
+  "case_id": "vessel-5",
+  "vessels": [
+    {
+      "id": "V-2",
+      "callsign": "HAI-5",
+      "aliases": [
+        "海五",
+        "调查五号"
+      ]
+    }
+  ],
+  "policy": {
+    "captain_order_actions": [
+      "shift_anchor",
+      "start_operations"
+    ],
+    "clearance_actions": [
+      "shift_anchor",
+      "start_operations"
+    ],
+    "positioning_hard_block_states": {
+      "shift_anchor": [
+        "lost"
+      ],
+      "start_operations": [
+        "intermittent",
+        "lost"
+      ]
+    },
+    "positioning_advisory_states": [
+      "intermittent",
+      "fault",
+      "mentioned"
+    ],
+    "block_on_untimed_abnormal_positioning": false
+  },
+  "source_records": [
+    {
+      "id": "VH-5",
+      "lang": "zh",
+      "text": "风转东后再移锚，未收到岸站确认前维持现位。",
+      "kind": "captain-note"
+    },
+    {
+      "id": "VH-6",
+      "lang": "en",
+      "text": "Shore suggests moving after the current gust; no clearance has been issued.",
+      "kind": "radio-summary"
+    },
+    {
+      "id": "VH-7",
+      "lang": "zh",
+      "text": "定位每隔几分钟丢一次，时间未记录。",
+      "kind": "equipment-note"
+    },
+    {
+      "id": "VH-8",
+      "kind": "translation",
+      "lang": "zh",
+      "text": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。"
+    },
+    {
+      "id": "VH-9",
+      "kind": "shore-message",
+      "lang": "en",
+      "timestamp": "2026-11-26T18:05:00",
+      "text": "Shore station: clearance CLR-77 has been issued for the anchor move."
+    },
+    {
+      "id": "VH-10",
+      "kind": "captain-log",
+      "lang": "zh",
+      "timestamp": "2026-11-26T18:10:00",
+      "text": "18:10 风已转东，浪高1.6米，轻浪。"
+    },
+    {
+      "id": "VH-11",
+      "kind": "equipment-note",
+      "lang": "zh",
+      "text": "设备员澄清：定位间歇发生在移锚之前；当前信号仍需监视。"
+    },
+    {
+      "id": "TRACK-1820",
+      "kind": "track-point",
+      "timestamp": "2026-11-26T18:20:00",
+      "lat": 30.125,
+      "lon": 122.451,
+      "action_key": "shift_anchor",
+      "event": "anchor_move",
+      "completed": true,
+      "source": "fictional voyage track"
+    }
+  ],
+  "record_hashes": {
+    "VH-5": "9d710328dac58bfaf512395fa73d6f1bf9944c2f08ce41be7ef5b07521e7e098",
+    "VH-6": "7ac39bdeba30d3b04ff441c7ce4be6372a1e2468b75f816f118d2d7b2ac82a0f",
+    "VH-7": "8114e4c5b3298fd2905a3c062b63f023b1d852a5793bb8158e5442bda3deda95",
+    "VH-8": "f795592e1fc885eaf89385a5d23cbbac0ecbed32e918c8eeef92ea8968378863",
+    "VH-9": "4b6aecd1efff2df5f45a85cdf99e0b9658e51a93ade1874d5f7393f6018d6e60",
+    "VH-10": "ca4280a808520b5adc8fb01bed79b6ab3c88572aa4ab5ab2720d3090f3248543",
+    "VH-11": "0e47060c946cdd3a9f109371f167a12abac6f3e6569c6aa0f8b1bf443db87231",
+    "TRACK-1820": "328ea79074c6c184362ec90400fb44ca90c9ef0384e1117b756e8d2fffb877d9"
+  },
+  "sentences": {
+    "VH-5#S1": {
+      "sentence_id": "VH-5#S1",
+      "record_id": "VH-5",
+      "text": "风转东后再移锚，未收到岸站确认前维持现位。",
+      "start": 0,
+      "end": 21,
+      "lang": "zh"
+    },
+    "VH-6#S1": {
+      "sentence_id": "VH-6#S1",
+      "record_id": "VH-6",
+      "text": "Shore suggests moving after the current gust;",
+      "start": 0,
+      "end": 45,
+      "lang": "en"
+    },
+    "VH-6#S2": {
+      "sentence_id": "VH-6#S2",
+      "record_id": "VH-6",
+      "text": "no clearance has been issued.",
+      "start": 46,
+      "end": 75,
+      "lang": "en"
+    },
+    "VH-7#S1": {
+      "sentence_id": "VH-7#S1",
+      "record_id": "VH-7",
+      "text": "定位每隔几分钟丢一次，时间未记录。",
+      "start": 0,
+      "end": 17,
+      "lang": "zh"
+    },
+    "VH-8#S1": {
+      "sentence_id": "VH-8#S1",
+      "record_id": "VH-8",
+      "text": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。",
+      "start": 0,
+      "end": 33,
+      "lang": "zh"
+    },
+    "VH-9#S1": {
+      "sentence_id": "VH-9#S1",
+      "record_id": "VH-9",
+      "text": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+      "start": 0,
+      "end": 68,
+      "lang": "en"
+    },
+    "VH-10#S1": {
+      "sentence_id": "VH-10#S1",
+      "record_id": "VH-10",
+      "text": "18:10 风已转东，浪高1.6米，轻浪。",
+      "start": 0,
+      "end": 21,
+      "lang": "zh"
+    },
+    "VH-11#S1": {
+      "sentence_id": "VH-11#S1",
+      "record_id": "VH-11",
+      "text": "设备员澄清：定位间歇发生在移锚之前；",
+      "start": 0,
+      "end": 18,
+      "lang": "zh"
+    },
+    "VH-11#S2": {
+      "sentence_id": "VH-11#S2",
+      "record_id": "VH-11",
+      "text": "当前信号仍需监视。",
+      "start": 18,
+      "end": 27,
+      "lang": "zh"
+    }
+  },
+  "claims": [
+    {
+      "id": "CL-VH-5-01-A",
+      "record_id": "VH-5",
+      "sentence_id": "VH-5#S1",
+      "kind": "order",
+      "summary": "船长条件性指令：移锚 / shift anchor。",
+      "speaker_role": "captain",
+      "speaker_label": null,
+      "reporter_role": "captain",
+      "action_key": "shift_anchor",
+      "action_label": "移锚 / shift anchor",
+      "speech_act": "order",
+      "modality": "conditional",
+      "polarity": "positive",
+      "confidence": "high",
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-5",
+          "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-5",
+          "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+          "sentence_id": "VH-5#S1",
+          "start": 0,
+          "end": 21,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        },
+        {
+          "record_id": "VH-5",
+          "quote": "风转东后再移锚",
+          "sentence_id": "VH-5#S1",
+          "start": 0,
+          "end": 7,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        }
+      ],
+      "condition_keys": [
+        "weather.wind_east"
+      ],
+      "attributes": {
+        "contextual_coreference_candidate": false,
+        "translation": false,
+        "authoritative": true,
+        "clause": "风转东后再移锚",
+        "ingest_order": 1
+      }
+    },
+    {
+      "id": "CL-VH-5-02-C",
+      "record_id": "VH-5",
+      "sentence_id": "VH-5#S1",
+      "kind": "clearance_status",
+      "summary": "明确说明岸站确认/许可尚未收到或尚未签发。",
+      "speaker_role": "captain",
+      "speaker_label": null,
+      "reporter_role": "captain",
+      "action_key": "maintain_position",
+      "action_label": null,
+      "speech_act": "clearance_withheld",
+      "modality": "status",
+      "polarity": "negative",
+      "confidence": "high",
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-5",
+          "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-5",
+          "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+          "sentence_id": "VH-5#S1",
+          "start": 0,
+          "end": 21,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        },
+        {
+          "record_id": "VH-5",
+          "quote": "未收到岸站确认前维持现位。",
+          "sentence_id": "VH-5#S1",
+          "start": 8,
+          "end": 21,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        }
+      ],
+      "condition_keys": [
+        "authorization.shore_clearance"
+      ],
+      "attributes": {
+        "authoritative": true,
+        "translation": false,
+        "unconditional_approval_text": false,
+        "ingest_order": 1
+      }
+    },
+    {
+      "id": "CL-VH-5-03-A",
+      "record_id": "VH-5",
+      "sentence_id": "VH-5#S1",
+      "kind": "order",
+      "summary": "船长条件性指令：维持现位 / maintain position。",
+      "speaker_role": "captain",
+      "speaker_label": null,
+      "reporter_role": "captain",
+      "action_key": "maintain_position",
+      "action_label": "维持现位 / maintain position",
+      "speech_act": "order",
+      "modality": "conditional",
+      "polarity": "positive",
+      "confidence": "high",
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-5",
+          "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-5",
+          "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+          "sentence_id": "VH-5#S1",
+          "start": 0,
+          "end": 21,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        },
+        {
+          "record_id": "VH-5",
+          "quote": "未收到岸站确认前维持现位。",
+          "sentence_id": "VH-5#S1",
+          "start": 8,
+          "end": 21,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        }
+      ],
+      "condition_keys": [
+        "authorization.shore_clearance"
+      ],
+      "attributes": {
+        "contextual_coreference_candidate": false,
+        "translation": false,
+        "authoritative": true,
+        "clause": "未收到岸站确认前维持现位。",
+        "ingest_order": 1
+      }
+    },
+    {
+      "id": "CL-VH-6-01-A",
+      "record_id": "VH-6",
+      "sentence_id": "VH-6#S1",
+      "kind": "suggestion",
+      "summary": "岸站建议/提议 移船/移动（需上下文指代）。",
+      "speaker_role": "shore_station",
+      "speaker_label": "Shore ",
+      "reporter_role": "radio_operator",
+      "action_key": "move_vessel",
+      "action_label": "移船/移动（需上下文指代）",
+      "speech_act": "suggestion",
+      "modality": "conditional",
+      "polarity": "positive",
+      "confidence": "medium",
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-6",
+          "quote": "Shore suggests moving after the current gust; no clearance has been issued.",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-6",
+          "quote": "Shore suggests moving after the current gust;",
+          "sentence_id": "VH-6#S1",
+          "start": 0,
+          "end": 45,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        },
+        {
+          "record_id": "VH-6",
+          "quote": "Shore suggests moving after the current gust;",
+          "sentence_id": "VH-6#S1",
+          "start": 0,
+          "end": 45,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        }
+      ],
+      "condition_keys": [
+        "weather.gust_passed"
+      ],
+      "attributes": {
+        "contextual_coreference_candidate": true,
+        "translation": false,
+        "authoritative": true,
+        "clause": "Shore suggests moving after the current gust;",
+        "ingest_order": 2,
+        "coreference_resolution": "shift_anchor",
+        "coreference_reason": "same vessel and unique known movement action"
+      }
+    },
+    {
+      "id": "CL-VH-6-02-C",
+      "record_id": "VH-6",
+      "sentence_id": "VH-6#S2",
+      "kind": "clearance_status",
+      "summary": "明确说明岸站确认/许可尚未收到或尚未签发。",
+      "speaker_role": "radio_operator",
+      "speaker_label": null,
+      "reporter_role": "radio_operator",
+      "action_key": "move_vessel",
+      "action_label": null,
+      "speech_act": "clearance_withheld",
+      "modality": "status",
+      "polarity": "negative",
+      "confidence": "high",
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-6",
+          "quote": "Shore suggests moving after the current gust; no clearance has been issued.",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-6",
+          "quote": "no clearance has been issued.",
+          "sentence_id": "VH-6#S2",
+          "start": 46,
+          "end": 75,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        },
+        {
+          "record_id": "VH-6",
+          "quote": "no clearance has been issued.",
+          "sentence_id": "VH-6#S2",
+          "start": 46,
+          "end": 75,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        }
+      ],
+      "condition_keys": [
+        "authorization.shore_clearance"
+      ],
+      "attributes": {
+        "authoritative": true,
+        "translation": false,
+        "unconditional_approval_text": false,
+        "ingest_order": 2,
+        "coreference_resolution": "shift_anchor",
+        "coreference_reason": "same vessel and unique known movement action"
+      }
+    },
+    {
+      "id": "CL-VH-8-01-C",
+      "record_id": "VH-8",
+      "sentence_id": "VH-8#S1",
+      "kind": "translated_clearance_claim",
+      "summary": "转译/摘要声称岸站已批准或签发许可；在与原始岸站记录核对前不得视为已确认。",
+      "speaker_role": "shore_station",
+      "speaker_label": "岸站",
+      "reporter_role": "translator",
+      "action_key": "shift_anchor",
+      "action_label": null,
+      "speech_act": "translated_clearance",
+      "modality": "unconditional",
+      "polarity": "positive",
+      "confidence": "medium",
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-8",
+          "quote": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "zh",
+          "source_kind": "translation"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-8",
+          "quote": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。",
+          "sentence_id": "VH-8#S1",
+          "start": 0,
+          "end": 33,
+          "lang": "zh",
+          "source_kind": "translation"
+        },
+        {
+          "record_id": "VH-8",
+          "quote": "译文把该句写作“岸站已批准移锚",
+          "sentence_id": "VH-8#S1",
+          "start": 0,
+          "end": 15,
+          "lang": "zh",
+          "source_kind": "translation"
+        }
+      ],
+      "condition_keys": [
+        "authorization.shore_clearance"
+      ],
+      "attributes": {
+        "authoritative": false,
+        "translation": true,
+        "unconditional_approval_text": true,
+        "ingest_order": 4
+      }
+    },
+    {
+      "id": "CL-VH-8-02-A",
+      "record_id": "VH-8",
+      "sentence_id": "VH-8#S1",
+      "kind": "translated_approval_claim",
+      "summary": "转译文本声称已批准/可执行 移锚 / shift anchor，但转译本身不是许可确认。",
+      "speaker_role": "shore_station",
+      "speaker_label": "岸站",
+      "reporter_role": "translator",
+      "action_key": "shift_anchor",
+      "action_label": "移锚 / shift anchor",
+      "speech_act": "translated_approval",
+      "modality": "unconditional",
+      "polarity": "positive",
+      "confidence": "medium",
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-8",
+          "quote": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "zh",
+          "source_kind": "translation"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-8",
+          "quote": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。",
+          "sentence_id": "VH-8#S1",
+          "start": 0,
+          "end": 33,
+          "lang": "zh",
+          "source_kind": "translation"
+        },
+        {
+          "record_id": "VH-8",
+          "quote": "译文把该句写作“岸站已批准移锚",
+          "sentence_id": "VH-8#S1",
+          "start": 0,
+          "end": 15,
+          "lang": "zh",
+          "source_kind": "translation"
+        }
+      ],
+      "condition_keys": [
+        "authorization.shore_clearance"
+      ],
+      "attributes": {
+        "contextual_coreference_candidate": false,
+        "translation": true,
+        "authoritative": false,
+        "clause": "译文把该句写作“岸站已批准移锚",
+        "ingest_order": 4
+      }
+    },
+    {
+      "id": "CL-VH-9-01-C",
+      "record_id": "VH-9",
+      "sentence_id": "VH-9#S1",
+      "kind": "clearance",
+      "summary": "出现岸站已确认、批准或签发许可的肯定表述。",
+      "speaker_role": "shore_station",
+      "speaker_label": "Shore station",
+      "reporter_role": "shore_station",
+      "action_key": "shift_anchor",
+      "action_label": null,
+      "speech_act": "clearance_issued",
+      "modality": "unconditional",
+      "polarity": "positive",
+      "confidence": "high",
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-9",
+          "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "en",
+          "source_kind": "shore-message"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-9",
+          "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+          "sentence_id": "VH-9#S1",
+          "start": 0,
+          "end": 68,
+          "lang": "en",
+          "source_kind": "shore-message"
+        },
+        {
+          "record_id": "VH-9",
+          "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+          "sentence_id": "VH-9#S1",
+          "start": 0,
+          "end": 68,
+          "lang": "en",
+          "source_kind": "shore-message"
+        }
+      ],
+      "condition_keys": [
+        "authorization.shore_clearance"
+      ],
+      "attributes": {
+        "authoritative": true,
+        "translation": false,
+        "unconditional_approval_text": false,
+        "ingest_order": 5
+      }
+    },
+    {
+      "id": "CL-VH-9-02-A",
+      "record_id": "VH-9",
+      "sentence_id": "VH-9#S1",
+      "kind": "action_statement",
+      "summary": "出现行动表述 移锚 / shift anchor，需结合上下文判断言语行为。",
+      "speaker_role": "shore_station",
+      "speaker_label": "Shore station",
+      "reporter_role": "shore_station",
+      "action_key": "shift_anchor",
+      "action_label": "移锚 / shift anchor",
+      "speech_act": "statement",
+      "modality": "unknown",
+      "polarity": "positive",
+      "confidence": "high",
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-9",
+          "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "en",
+          "source_kind": "shore-message"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-9",
+          "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+          "sentence_id": "VH-9#S1",
+          "start": 0,
+          "end": 68,
+          "lang": "en",
+          "source_kind": "shore-message"
+        },
+        {
+          "record_id": "VH-9",
+          "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+          "sentence_id": "VH-9#S1",
+          "start": 0,
+          "end": 68,
+          "lang": "en",
+          "source_kind": "shore-message"
+        }
+      ],
+      "condition_keys": [
+        "authorization.shore_clearance"
+      ],
+      "attributes": {
+        "contextual_coreference_candidate": false,
+        "translation": false,
+        "authoritative": true,
+        "clause": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+        "ingest_order": 5
+      }
+    },
+    {
+      "id": "CL-VH-11-01-A",
+      "record_id": "VH-11",
+      "sentence_id": "VH-11#S1",
+      "kind": "order",
+      "summary": "设备员条件性指令：移锚 / shift anchor。",
+      "speaker_role": "equipment_officer",
+      "speaker_label": "设备员",
+      "reporter_role": "equipment_officer",
+      "action_key": "shift_anchor",
+      "action_label": "移锚 / shift anchor",
+      "speech_act": "order",
+      "modality": "conditional",
+      "polarity": "positive",
+      "confidence": "high",
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-11",
+          "quote": "设备员澄清：定位间歇发生在移锚之前；当前信号仍需监视。",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-11",
+          "quote": "设备员澄清：定位间歇发生在移锚之前；",
+          "sentence_id": "VH-11#S1",
+          "start": 0,
+          "end": 18,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        },
+        {
+          "record_id": "VH-11",
+          "quote": "设备员澄清：定位间歇发生在移锚之前；",
+          "sentence_id": "VH-11#S1",
+          "start": 0,
+          "end": 18,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        }
+      ],
+      "condition_keys": [],
+      "attributes": {
+        "contextual_coreference_candidate": false,
+        "translation": false,
+        "authoritative": true,
+        "clause": "设备员澄清：定位间歇发生在移锚之前；",
+        "ingest_order": 7
+      }
+    }
+  ],
+  "observations": [
+    {
+      "id": "OB-VH-7-01-E",
+      "record_id": "VH-7",
+      "sentence_id": "VH-7#S1",
+      "category": "equipment",
+      "subject": "positioning_system",
+      "key": "equipment.positioning.intermittent",
+      "label": "定位信号间歇/周期性丢失",
+      "state": "intermittent",
+      "value": "每隔几分钟丢一次",
+      "time_ref": null,
+      "timestamp": null,
+      "temporal_relation": null,
+      "reference_event": null,
+      "clarification": false,
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-7",
+          "quote": "定位每隔几分钟丢一次，时间未记录。",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-7",
+          "quote": "定位每隔几分钟丢一次，时间未记录。",
+          "sentence_id": "VH-7#S1",
+          "start": 0,
+          "end": 17,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        }
+      ],
+      "attributes": {
+        "timing_unknown": true,
+        "subject_match": "定位",
+        "ingest_order": 3,
+        "applicability": "before_or_unclear_relative_to_action"
+      }
+    },
+    {
+      "id": "OB-VH-10-02-S",
+      "record_id": "VH-10",
+      "sentence_id": "VH-10#S1",
+      "category": "sea_state",
+      "subject": "浪高",
+      "key": "sea_state.numeric.",
+      "label": "浪高 1.6米",
+      "state": "observed",
+      "value": "1.6米",
+      "time_ref": "18:10",
+      "timestamp": "2026-11-26T18:10:00",
+      "temporal_relation": null,
+      "reference_event": null,
+      "clarification": false,
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-10",
+          "quote": "18:10 风已转东，浪高1.6米，轻浪。",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "zh",
+          "source_kind": "captain-log"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-10",
+          "quote": "浪高1.6米",
+          "sentence_id": "VH-10#S1",
+          "start": 11,
+          "end": 17,
+          "lang": "zh",
+          "source_kind": "captain-log"
+        }
+      ],
+      "attributes": {
+        "numeric": 1.6,
+        "unit": "米",
+        "ingest_order": 6
+      }
+    },
+    {
+      "id": "OB-VH-10-04-Q",
+      "record_id": "VH-10",
+      "sentence_id": "VH-10#S1",
+      "category": "sea_state",
+      "subject": "sea_state",
+      "key": "sea_state.qualitative",
+      "label": "轻浪",
+      "state": "observed",
+      "value": "轻浪",
+      "time_ref": "18:10",
+      "timestamp": "2026-11-26T18:10:00",
+      "temporal_relation": null,
+      "reference_event": null,
+      "clarification": false,
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-10",
+          "quote": "18:10 风已转东，浪高1.6米，轻浪。",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "zh",
+          "source_kind": "captain-log"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-10",
+          "quote": "轻浪。",
+          "sentence_id": "VH-10#S1",
+          "start": 18,
+          "end": 21,
+          "lang": "zh",
+          "source_kind": "captain-log"
+        }
+      ],
+      "attributes": {
+        "ingest_order": 6
+      }
+    },
+    {
+      "id": "OB-VH-11-01-E",
+      "record_id": "VH-11",
+      "sentence_id": "VH-11#S1",
+      "category": "equipment",
+      "subject": "positioning_system",
+      "key": "equipment.positioning.intermittent",
+      "label": "定位信号间歇/周期性丢失",
+      "state": "intermittent",
+      "value": null,
+      "time_ref": null,
+      "timestamp": null,
+      "temporal_relation": "before",
+      "reference_event": "shift_anchor",
+      "clarification": true,
+      "vessel": {
+        "vessel_id": "V-2",
+        "resolution": "sole_case_vessel_context",
+        "mention": null,
+        "candidates": [],
+        "evidence": {
+          "record_id": "VH-11",
+          "quote": "设备员澄清：定位间歇发生在移锚之前；当前信号仍需监视。",
+          "sentence_id": null,
+          "start": null,
+          "end": null,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        }
+      },
+      "evidence": [
+        {
+          "record_id": "VH-11",
+          "quote": "设备员澄清：定位间歇发生在移锚之前；",
+          "sentence_id": "VH-11#S1",
+          "start": 0,
+          "end": 18,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        }
+      ],
+      "attributes": {
+        "timing_unknown": false,
+        "subject_match": "定位",
+        "ingest_order": 7,
+        "applicability": "before_or_unclear_relative_to_action"
+      }
+    }
+  ],
+  "conditions": {
+    "authorization.shore_clearance": {
+      "key": "authorization.shore_clearance",
+      "label": "岸站确认/移锚许可 / shore confirmation or clearance",
+      "category": "authorization",
+      "state": "met",
+      "blocking": true,
+      "source": "captain",
+      "requirement_evidence": [
+        {
+          "record_id": "VH-5",
+          "quote": "未收到岸站确认前维持现位。",
+          "sentence_id": "VH-5#S1",
+          "start": 8,
+          "end": 21,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        },
+        {
+          "record_id": "VH-6",
+          "quote": "no clearance has been issued.",
+          "sentence_id": "VH-6#S2",
+          "start": 46,
+          "end": 75,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        },
+        {
+          "record_id": "VH-8",
+          "quote": "译文把该句写作“岸站已批准移锚",
+          "sentence_id": "VH-8#S1",
+          "start": 0,
+          "end": 15,
+          "lang": "zh",
+          "source_kind": "translation"
+        },
+        {
+          "record_id": "VH-9",
+          "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+          "sentence_id": "VH-9#S1",
+          "start": 0,
+          "end": 68,
+          "lang": "en",
+          "source_kind": "shore-message"
+        }
+      ],
+      "state_evidence": [
+        {
+          "record_id": "VH-5",
+          "quote": "未收到岸站确认前维持现位。",
+          "sentence_id": "VH-5#S1",
+          "start": 8,
+          "end": 21,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        },
+        {
+          "record_id": "VH-6",
+          "quote": "no clearance has been issued.",
+          "sentence_id": "VH-6#S2",
+          "start": 46,
+          "end": 75,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        },
+        {
+          "record_id": "VH-8",
+          "quote": "译文把该句写作“岸站已批准移锚",
+          "sentence_id": "VH-8#S1",
+          "start": 0,
+          "end": 15,
+          "lang": "zh",
+          "source_kind": "translation"
+        },
+        {
+          "record_id": "VH-9",
+          "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+          "sentence_id": "VH-9#S1",
+          "start": 0,
+          "end": 68,
+          "lang": "en",
+          "source_kind": "shore-message"
+        }
+      ],
+      "detail": {
+        "state_history": [
+          {
+            "state": "absent",
+            "record_id": "VH-5",
+            "timestamp": null,
+            "order": 1,
+            "authoritative": true
+          },
+          {
+            "state": "absent",
+            "record_id": "VH-6",
+            "timestamp": null,
+            "order": 2,
+            "authoritative": true
+          },
+          {
+            "state": "unverified_claim",
+            "record_id": "VH-8",
+            "timestamp": null,
+            "order": 4,
+            "authoritative": false
+          },
+          {
+            "state": "met",
+            "record_id": "VH-9",
+            "timestamp": "2026-11-26T18:05:00",
+            "order": 5,
+            "authoritative": true
+          }
+        ],
+        "latest_state_record": "VH-9",
+        "latest_state_order": 5
+      }
+    },
+    "weather.gust_passed": {
+      "key": "weather.gust_passed",
+      "label": "当前阵风过去 / current gust passes",
+      "category": "weather",
+      "state": "required",
+      "blocking": false,
+      "source": "shore_suggestion",
+      "requirement_evidence": [
+        {
+          "record_id": "VH-6",
+          "quote": "Shore suggests moving after the current gust;",
+          "sentence_id": "VH-6#S1",
+          "start": 0,
+          "end": 45,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        }
+      ],
+      "state_evidence": [],
+      "detail": {
+        "state_history": []
+      }
+    },
+    "weather.wind_east": {
+      "key": "weather.wind_east",
+      "label": "风转东 / wind turns east",
+      "category": "weather",
+      "state": "met",
+      "blocking": true,
+      "source": "captain",
+      "requirement_evidence": [
+        {
+          "record_id": "VH-5",
+          "quote": "风转东后再移锚",
+          "sentence_id": "VH-5#S1",
+          "start": 0,
+          "end": 7,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        }
+      ],
+      "state_evidence": [
+        {
+          "record_id": "VH-10",
+          "quote": "18:10 风已转东",
+          "sentence_id": "VH-10#S1",
+          "start": 0,
+          "end": 10,
+          "lang": "zh",
+          "source_kind": "captain-log"
+        }
+      ],
+      "detail": {
+        "state_history": [
+          {
+            "state": "met",
+            "record_id": "VH-10",
+            "timestamp": "2026-11-26T18:10:00",
+            "order": 6,
+            "authoritative": true
+          }
+        ],
+        "latest_state_record": "VH-10",
+        "latest_state_order": 6
+      }
+    }
+  },
+  "issues": [
+    {
+      "code": "equipment_timing_unknown",
+      "severity": "info",
+      "message": "设备异常仅有间歇/丢失报告，尚未记录其与移锚的时间先后。",
+      "evidence": [
+        {
+          "record_id": "VH-7",
+          "quote": "定位每隔几分钟丢一次，时间未记录。",
+          "sentence_id": "VH-7#S1",
+          "start": 0,
+          "end": 17,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        }
+      ],
+      "details": {}
+    },
+    {
+      "code": "unverified_translation_as_clearance",
+      "severity": "warning",
+      "message": "“已批准”来自转译/摘要文本；条件句或许可状态可能在翻译中被压成无条件许可。",
+      "evidence": [
+        {
+          "record_id": "VH-8",
+          "quote": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。",
+          "sentence_id": "VH-8#S1",
+          "start": 0,
+          "end": 33,
+          "lang": "zh",
+          "source_kind": "translation"
+        },
+        {
+          "record_id": "VH-8",
+          "quote": "译文把该句写作“岸站已批准移锚",
+          "sentence_id": "VH-8#S1",
+          "start": 0,
+          "end": 15,
+          "lang": "zh",
+          "source_kind": "translation"
+        }
+      ],
+      "details": {
+        "action_key": "shift_anchor"
+      }
+    },
+    {
+      "code": "timing_clarification",
+      "severity": "info",
+      "message": "新日志澄清设备事件发生在移锚之前。",
+      "evidence": [
+        {
+          "record_id": "VH-11",
+          "quote": "设备员澄清：定位间歇发生在移锚之前；",
+          "sentence_id": "VH-11#S1",
+          "start": 0,
+          "end": 18,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        }
+      ],
+      "details": {
+        "temporal_relation": "before",
+        "observation_id": "OB-VH-11-01-E"
+      }
+    },
+    {
+      "code": "contextual_action_coreference",
+      "severity": "info",
+      "message": "“moving/移动”按同船唯一已知移锚事项指代到移锚；该关联保留原句证据。",
+      "evidence": [
+        {
+          "record_id": "VH-6",
+          "quote": "Shore suggests moving after the current gust;",
+          "sentence_id": "VH-6#S1",
+          "start": 0,
+          "end": 45,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        },
+        {
+          "record_id": "VH-6",
+          "quote": "Shore suggests moving after the current gust;",
+          "sentence_id": "VH-6#S1",
+          "start": 0,
+          "end": 45,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        }
+      ],
+      "details": {
+        "claim_id": "CL-VH-6-01-A",
+        "resolved_action_key": "shift_anchor"
+      }
+    }
+  ],
+  "action_cards": {
+    "AC-V-2-maintain_position": {
+      "id": "AC-V-2-maintain_position",
+      "action_key": "maintain_position",
+      "action_label": "维持现位",
+      "vessel_id": "V-2",
+      "vessel_candidates": [],
+      "status": "in_force",
+      "title": "维持现位",
+      "order_claim_ids": [
+        "CL-VH-5-03-A"
+      ],
+      "suggestion_claim_ids": [],
+      "clearance_claim_ids": [
+        "CL-VH-5-02-C"
+      ],
+      "report_claim_ids": [],
+      "condition_keys": [
+        "authorization.shore_clearance"
+      ],
+      "conditions": {
+        "authorization.shore_clearance": {
+          "key": "authorization.shore_clearance",
+          "label": "岸站确认/移锚许可 / shore confirmation or clearance",
+          "category": "authorization",
+          "state": "met",
+          "blocking": false,
+          "source": "captain",
+          "requirement_evidence": [
+            {
+              "record_id": "VH-5",
+              "quote": "未收到岸站确认前维持现位。",
+              "sentence_id": "VH-5#S1",
+              "start": 8,
+              "end": 21,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            },
+            {
+              "record_id": "VH-6",
+              "quote": "no clearance has been issued.",
+              "sentence_id": "VH-6#S2",
+              "start": 46,
+              "end": 75,
+              "lang": "en",
+              "source_kind": "radio-summary"
+            },
+            {
+              "record_id": "VH-8",
+              "quote": "译文把该句写作“岸站已批准移锚",
+              "sentence_id": "VH-8#S1",
+              "start": 0,
+              "end": 15,
+              "lang": "zh",
+              "source_kind": "translation"
+            },
+            {
+              "record_id": "VH-9",
+              "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+              "sentence_id": "VH-9#S1",
+              "start": 0,
+              "end": 68,
+              "lang": "en",
+              "source_kind": "shore-message"
+            }
+          ],
+          "state_evidence": [
+            {
+              "record_id": "VH-5",
+              "quote": "未收到岸站确认前维持现位。",
+              "sentence_id": "VH-5#S1",
+              "start": 8,
+              "end": 21,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            },
+            {
+              "record_id": "VH-6",
+              "quote": "no clearance has been issued.",
+              "sentence_id": "VH-6#S2",
+              "start": 46,
+              "end": 75,
+              "lang": "en",
+              "source_kind": "radio-summary"
+            },
+            {
+              "record_id": "VH-8",
+              "quote": "译文把该句写作“岸站已批准移锚",
+              "sentence_id": "VH-8#S1",
+              "start": 0,
+              "end": 15,
+              "lang": "zh",
+              "source_kind": "translation"
+            },
+            {
+              "record_id": "VH-9",
+              "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+              "sentence_id": "VH-9#S1",
+              "start": 0,
+              "end": 68,
+              "lang": "en",
+              "source_kind": "shore-message"
+            }
+          ],
+          "detail": {
+            "state_history": [
+              {
+                "state": "absent",
+                "record_id": "VH-5",
+                "timestamp": null,
+                "order": 1,
+                "authoritative": true
+              },
+              {
+                "state": "absent",
+                "record_id": "VH-6",
+                "timestamp": null,
+                "order": 2,
+                "authoritative": true
+              },
+              {
+                "state": "unverified_claim",
+                "record_id": "VH-8",
+                "timestamp": null,
+                "order": 4,
+                "authoritative": false
+              },
+              {
+                "state": "met",
+                "record_id": "VH-9",
+                "timestamp": "2026-11-26T18:05:00",
+                "order": 5,
+                "authoritative": true
+              }
+            ],
+            "latest_state_record": "VH-9",
+            "latest_state_order": 5,
+            "role": "termination_condition"
+          }
+        }
+      },
+      "blocker_keys": [],
+      "advisory_keys": [
+        "OB-VH-11-01-E"
+      ],
+      "timeline": [
+        {
+          "key": "equipment-OB-VH-11-01-E",
+          "label": "定位信号间歇/周期性丢失",
+          "relation": "before",
+          "timestamp": null,
+          "evidence": [
+            {
+              "record_id": "VH-11",
+              "quote": "设备员澄清：定位间歇发生在移锚之前；",
+              "sentence_id": "VH-11#S1",
+              "start": 0,
+              "end": 18,
+              "lang": "zh",
+              "source_kind": "equipment-note"
+            }
+          ],
+          "source_observation_id": "OB-VH-11-01-E"
+        }
+      ],
+      "evidence": [
+        {
+          "record_id": "VH-5",
+          "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+          "sentence_id": "VH-5#S1",
+          "start": 0,
+          "end": 21,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        },
+        {
+          "record_id": "VH-5",
+          "quote": "未收到岸站确认前维持现位。",
+          "sentence_id": "VH-5#S1",
+          "start": 8,
+          "end": 21,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        },
+        {
+          "record_id": "VH-7",
+          "quote": "定位每隔几分钟丢一次，时间未记录。",
+          "sentence_id": "VH-7#S1",
+          "start": 0,
+          "end": 17,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        },
+        {
+          "record_id": "VH-11",
+          "quote": "设备员澄清：定位间歇发生在移锚之前；",
+          "sentence_id": "VH-11#S1",
+          "start": 0,
+          "end": 18,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        }
+      ],
+      "revision": 4,
+      "source_record_ids": [
+        "VH-5",
+        "VH-7",
+        "VH-11"
+      ],
+      "completed": false,
+      "completion": null,
+      "immutable": false,
+      "notes": []
+    },
+    "AC-V-2-shift_anchor": {
+      "id": "AC-V-2-shift_anchor",
+      "action_key": "shift_anchor",
+      "action_label": "移锚",
+      "vessel_id": "V-2",
+      "vessel_candidates": [],
+      "status": "completed",
+      "title": "移锚",
+      "order_claim_ids": [
+        "CL-VH-5-01-A",
+        "CL-VH-11-01-A"
+      ],
+      "suggestion_claim_ids": [
+        "CL-VH-6-01-A"
+      ],
+      "clearance_claim_ids": [
+        "CL-VH-6-02-C",
+        "CL-VH-8-01-C",
+        "CL-VH-9-01-C"
+      ],
+      "report_claim_ids": [],
+      "condition_keys": [
+        "authority.captain_order",
+        "authorization.shore_clearance",
+        "weather.gust_passed",
+        "weather.wind_east"
+      ],
+      "conditions": {
+        "weather.wind_east": {
+          "key": "weather.wind_east",
+          "label": "风转东 / wind turns east",
+          "category": "weather",
+          "state": "met",
+          "blocking": true,
+          "source": "captain",
+          "requirement_evidence": [
+            {
+              "record_id": "VH-5",
+              "quote": "风转东后再移锚",
+              "sentence_id": "VH-5#S1",
+              "start": 0,
+              "end": 7,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            }
+          ],
+          "state_evidence": [
+            {
+              "record_id": "VH-10",
+              "quote": "18:10 风已转东",
+              "sentence_id": "VH-10#S1",
+              "start": 0,
+              "end": 10,
+              "lang": "zh",
+              "source_kind": "captain-log"
+            }
+          ],
+          "detail": {
+            "state_history": [
+              {
+                "state": "met",
+                "record_id": "VH-10",
+                "timestamp": "2026-11-26T18:10:00",
+                "order": 6,
+                "authoritative": true
+              }
+            ],
+            "latest_state_record": "VH-10",
+            "latest_state_order": 6
+          }
+        },
+        "weather.gust_passed": {
+          "key": "weather.gust_passed",
+          "label": "当前阵风过去 / current gust passes",
+          "category": "weather",
+          "state": "required",
+          "blocking": false,
+          "source": "shore_suggestion",
+          "requirement_evidence": [
+            {
+              "record_id": "VH-6",
+              "quote": "Shore suggests moving after the current gust;",
+              "sentence_id": "VH-6#S1",
+              "start": 0,
+              "end": 45,
+              "lang": "en",
+              "source_kind": "radio-summary"
+            }
+          ],
+          "state_evidence": [],
+          "detail": {
+            "state_history": []
+          }
+        },
+        "authorization.shore_clearance": {
+          "key": "authorization.shore_clearance",
+          "label": "岸站确认/作业许可已签发并收到",
+          "category": "authorization",
+          "state": "met",
+          "blocking": true,
+          "source": "captain",
+          "requirement_evidence": [
+            {
+              "record_id": "VH-5",
+              "quote": "未收到岸站确认前维持现位。",
+              "sentence_id": "VH-5#S1",
+              "start": 8,
+              "end": 21,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            },
+            {
+              "record_id": "VH-6",
+              "quote": "no clearance has been issued.",
+              "sentence_id": "VH-6#S2",
+              "start": 46,
+              "end": 75,
+              "lang": "en",
+              "source_kind": "radio-summary"
+            },
+            {
+              "record_id": "VH-8",
+              "quote": "译文把该句写作“岸站已批准移锚",
+              "sentence_id": "VH-8#S1",
+              "start": 0,
+              "end": 15,
+              "lang": "zh",
+              "source_kind": "translation"
+            },
+            {
+              "record_id": "VH-9",
+              "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+              "sentence_id": "VH-9#S1",
+              "start": 0,
+              "end": 68,
+              "lang": "en",
+              "source_kind": "shore-message"
+            }
+          ],
+          "state_evidence": [
+            {
+              "record_id": "VH-5",
+              "quote": "未收到岸站确认前维持现位。",
+              "sentence_id": "VH-5#S1",
+              "start": 8,
+              "end": 21,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            },
+            {
+              "record_id": "VH-6",
+              "quote": "no clearance has been issued.",
+              "sentence_id": "VH-6#S2",
+              "start": 46,
+              "end": 75,
+              "lang": "en",
+              "source_kind": "radio-summary"
+            },
+            {
+              "record_id": "VH-8",
+              "quote": "译文把该句写作“岸站已批准移锚",
+              "sentence_id": "VH-8#S1",
+              "start": 0,
+              "end": 15,
+              "lang": "zh",
+              "source_kind": "translation"
+            },
+            {
+              "record_id": "VH-9",
+              "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+              "sentence_id": "VH-9#S1",
+              "start": 0,
+              "end": 68,
+              "lang": "en",
+              "source_kind": "shore-message"
+            }
+          ],
+          "detail": {
+            "state_history": [
+              {
+                "state": "absent",
+                "record_id": "VH-5",
+                "timestamp": null,
+                "order": 1,
+                "authoritative": true
+              },
+              {
+                "state": "absent",
+                "record_id": "VH-6",
+                "timestamp": null,
+                "order": 2,
+                "authoritative": true
+              },
+              {
+                "state": "unverified_claim",
+                "record_id": "VH-8",
+                "timestamp": null,
+                "order": 4,
+                "authoritative": false
+              },
+              {
+                "state": "met",
+                "record_id": "VH-9",
+                "timestamp": "2026-11-26T18:05:00",
+                "order": 5,
+                "authoritative": true
+              }
+            ],
+            "latest_state_record": "VH-9",
+            "latest_state_order": 5
+          }
+        },
+        "authority.captain_order": {
+          "key": "authority.captain_order",
+          "label": "船长命令（岸站建议/转译不能替代）",
+          "category": "authority",
+          "state": "met",
+          "blocking": true,
+          "source": "captain_order",
+          "requirement_evidence": [],
+          "state_evidence": [
+            {
+              "record_id": "VH-5",
+              "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+              "sentence_id": "VH-5#S1",
+              "start": 0,
+              "end": 21,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            },
+            {
+              "record_id": "VH-5",
+              "quote": "风转东后再移锚",
+              "sentence_id": "VH-5#S1",
+              "start": 0,
+              "end": 7,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            },
+            {
+              "record_id": "VH-11",
+              "quote": "设备员澄清：定位间歇发生在移锚之前；",
+              "sentence_id": "VH-11#S1",
+              "start": 0,
+              "end": 18,
+              "lang": "zh",
+              "source_kind": "equipment-note"
+            },
+            {
+              "record_id": "VH-11",
+              "quote": "设备员澄清：定位间歇发生在移锚之前；",
+              "sentence_id": "VH-11#S1",
+              "start": 0,
+              "end": 18,
+              "lang": "zh",
+              "source_kind": "equipment-note"
+            }
+          ],
+          "detail": {}
+        }
+      },
+      "blocker_keys": [],
+      "advisory_keys": [
+        "OB-VH-11-01-E",
+        "weather.gust_passed"
+      ],
+      "timeline": [
+        {
+          "key": "equipment-OB-VH-11-01-E",
+          "label": "定位信号间歇/周期性丢失",
+          "relation": "before",
+          "timestamp": null,
+          "evidence": [
+            {
+              "record_id": "VH-11",
+              "quote": "设备员澄清：定位间歇发生在移锚之前；",
+              "sentence_id": "VH-11#S1",
+              "start": 0,
+              "end": 18,
+              "lang": "zh",
+              "source_kind": "equipment-note"
+            }
+          ],
+          "source_observation_id": "OB-VH-11-01-E"
+        }
+      ],
+      "evidence": [
+        {
+          "record_id": "VH-5",
+          "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+          "sentence_id": "VH-5#S1",
+          "start": 0,
+          "end": 21,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        },
+        {
+          "record_id": "VH-5",
+          "quote": "风转东后再移锚",
+          "sentence_id": "VH-5#S1",
+          "start": 0,
+          "end": 7,
+          "lang": "zh",
+          "source_kind": "captain-note"
+        },
+        {
+          "record_id": "VH-6",
+          "quote": "Shore suggests moving after the current gust;",
+          "sentence_id": "VH-6#S1",
+          "start": 0,
+          "end": 45,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        },
+        {
+          "record_id": "VH-6",
+          "quote": "no clearance has been issued.",
+          "sentence_id": "VH-6#S2",
+          "start": 46,
+          "end": 75,
+          "lang": "en",
+          "source_kind": "radio-summary"
+        },
+        {
+          "record_id": "VH-8",
+          "quote": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。",
+          "sentence_id": "VH-8#S1",
+          "start": 0,
+          "end": 33,
+          "lang": "zh",
+          "source_kind": "translation"
+        },
+        {
+          "record_id": "VH-8",
+          "quote": "译文把该句写作“岸站已批准移锚",
+          "sentence_id": "VH-8#S1",
+          "start": 0,
+          "end": 15,
+          "lang": "zh",
+          "source_kind": "translation"
+        },
+        {
+          "record_id": "VH-9",
+          "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+          "sentence_id": "VH-9#S1",
+          "start": 0,
+          "end": 68,
+          "lang": "en",
+          "source_kind": "shore-message"
+        },
+        {
+          "record_id": "VH-11",
+          "quote": "设备员澄清：定位间歇发生在移锚之前；",
+          "sentence_id": "VH-11#S1",
+          "start": 0,
+          "end": 18,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        },
+        {
+          "record_id": "VH-7",
+          "quote": "定位每隔几分钟丢一次，时间未记录。",
+          "sentence_id": "VH-7#S1",
+          "start": 0,
+          "end": 17,
+          "lang": "zh",
+          "source_kind": "equipment-note"
+        }
+      ],
+      "revision": 8,
+      "source_record_ids": [
+        "VH-5",
+        "VH-6",
+        "VH-8",
+        "VH-9",
+        "VH-11",
+        "VH-7"
+      ],
+      "completed": true,
+      "completion": {
+        "action_key": "shift_anchor",
+        "completed_at": "2026-11-26T18:20:00",
+        "record_id": "TRACK-1820",
+        "evidence": {
+          "record_id": "TRACK-1820",
+          "quote": "{\"id\": \"TRACK-1820\", \"kind\": \"track-point\", \"timestamp\": \"2026-11-26T18:20:00\", \"lat\": 30.125, \"lon\": 122.451, \"action_key\": \"shift_anchor\", \"event\": \"anchor_move\", \"completed\": true, \"source\": \"fictional voyage track\"}"
+        },
+        "explicit_track_record": true
+      },
+      "immutable": true,
+      "notes": []
+    }
+  },
+  "track_records": {
+    "TRACK-1820": {
+      "id": "TRACK-1820",
+      "kind": "track-point",
+      "timestamp": "2026-11-26T18:20:00",
+      "lat": 30.125,
+      "lon": 122.451,
+      "action_key": "shift_anchor",
+      "event": "anchor_move",
+      "completed": true,
+      "source": "fictional voyage track"
+    }
+  },
+  "track_chain": [
+    {
+      "record_id": "TRACK-1820",
+      "content_hash": "328ea79074c6c184362ec90400fb44ca90c9ef0384e1117b756e8d2fffb877d9",
+      "chain_hash": "834c78c1107b1dfedb7adffc7a17f6470c0345b1f1f34f6aafeeca327a3ca620"
+    }
+  ],
+  "track_chain_verified": true,
+  "completion_events": {
+    "V-2:shift_anchor": {
+      "action_key": "shift_anchor",
+      "completed_at": "2026-11-26T18:20:00",
+      "record_id": "TRACK-1820",
+      "evidence": {
+        "record_id": "TRACK-1820",
+        "quote": "{\"id\": \"TRACK-1820\", \"kind\": \"track-point\", \"timestamp\": \"2026-11-26T18:20:00\", \"lat\": 30.125, \"lon\": 122.451, \"action_key\": \"shift_anchor\", \"event\": \"anchor_move\", \"completed\": true, \"source\": \"fictional voyage track\"}"
+      },
+      "explicit_track_record": true
+    }
+  },
+  "briefing": {
+    "case_id": "vessel-5",
+    "title": "船岸交接 NLP 整理与下一班行动条件",
+    "fictional_data_notice": "本记录、船名、呼号与事件均为虚构演练资料。",
+    "source_record_count": 8,
+    "sentence_count": 9,
+    "track_chain_verified": true,
+    "who_reported_what": [
+      {
+        "claim_id": "CL-VH-11-01-A",
+        "who_role": "equipment_officer",
+        "who": "设备员",
+        "speaker_role": "equipment_officer",
+        "reporter_role": "equipment_officer",
+        "reporter": "设备员",
+        "what": "设备员条件性指令：移锚 / shift anchor。",
+        "kind": "order",
+        "speech_act": "order",
+        "modality": "conditional",
+        "polarity": "positive",
+        "action_key": "shift_anchor",
+        "action_label": "移锚 / shift anchor",
+        "vessel_id": "V-2",
+        "vessel_resolution": "sole_case_vessel_context",
+        "record_id": "VH-11",
+        "sentence_id": "VH-11#S1",
+        "provenance": [
+          {
+            "record_id": "VH-11",
+            "quote": "设备员澄清：定位间歇发生在移锚之前；",
+            "sentence_id": "VH-11#S1",
+            "start": 0,
+            "end": 18,
+            "lang": "zh",
+            "source_kind": "equipment-note"
+          },
+          {
+            "record_id": "VH-11",
+            "quote": "设备员澄清：定位间歇发生在移锚之前；",
+            "sentence_id": "VH-11#S1",
+            "start": 0,
+            "end": 18,
+            "lang": "zh",
+            "source_kind": "equipment-note"
+          }
+        ],
+        "provenance_refs": [
+          "[VH-11 VH-11#S1]"
+        ]
+      },
+      {
+        "claim_id": "CL-VH-5-01-A",
+        "who_role": "captain",
+        "who": "船长",
+        "speaker_role": "captain",
+        "reporter_role": "captain",
+        "reporter": "船长",
+        "what": "船长条件性指令：移锚 / shift anchor。",
+        "kind": "order",
+        "speech_act": "order",
+        "modality": "conditional",
+        "polarity": "positive",
+        "action_key": "shift_anchor",
+        "action_label": "移锚 / shift anchor",
+        "vessel_id": "V-2",
+        "vessel_resolution": "sole_case_vessel_context",
+        "record_id": "VH-5",
+        "sentence_id": "VH-5#S1",
+        "provenance": [
+          {
+            "record_id": "VH-5",
+            "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+            "sentence_id": "VH-5#S1",
+            "start": 0,
+            "end": 21,
+            "lang": "zh",
+            "source_kind": "captain-note"
+          },
+          {
+            "record_id": "VH-5",
+            "quote": "风转东后再移锚",
+            "sentence_id": "VH-5#S1",
+            "start": 0,
+            "end": 7,
+            "lang": "zh",
+            "source_kind": "captain-note"
+          }
+        ],
+        "provenance_refs": [
+          "[VH-5 VH-5#S1]"
+        ]
+      },
+      {
+        "claim_id": "CL-VH-5-02-C",
+        "who_role": "captain",
+        "who": "船长",
+        "speaker_role": "captain",
+        "reporter_role": "captain",
+        "reporter": "船长",
+        "what": "明确说明岸站确认/许可尚未收到或尚未签发。",
+        "kind": "clearance_status",
+        "speech_act": "clearance_withheld",
+        "modality": "status",
+        "polarity": "negative",
+        "action_key": "maintain_position",
+        "action_label": null,
+        "vessel_id": "V-2",
+        "vessel_resolution": "sole_case_vessel_context",
+        "record_id": "VH-5",
+        "sentence_id": "VH-5#S1",
+        "provenance": [
+          {
+            "record_id": "VH-5",
+            "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+            "sentence_id": "VH-5#S1",
+            "start": 0,
+            "end": 21,
+            "lang": "zh",
+            "source_kind": "captain-note"
+          },
+          {
+            "record_id": "VH-5",
+            "quote": "未收到岸站确认前维持现位。",
+            "sentence_id": "VH-5#S1",
+            "start": 8,
+            "end": 21,
+            "lang": "zh",
+            "source_kind": "captain-note"
+          }
+        ],
+        "provenance_refs": [
+          "[VH-5 VH-5#S1]"
+        ]
+      },
+      {
+        "claim_id": "CL-VH-5-03-A",
+        "who_role": "captain",
+        "who": "船长",
+        "speaker_role": "captain",
+        "reporter_role": "captain",
+        "reporter": "船长",
+        "what": "船长条件性指令：维持现位 / maintain position。",
+        "kind": "order",
+        "speech_act": "order",
+        "modality": "conditional",
+        "polarity": "positive",
+        "action_key": "maintain_position",
+        "action_label": "维持现位 / maintain position",
+        "vessel_id": "V-2",
+        "vessel_resolution": "sole_case_vessel_context",
+        "record_id": "VH-5",
+        "sentence_id": "VH-5#S1",
+        "provenance": [
+          {
+            "record_id": "VH-5",
+            "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+            "sentence_id": "VH-5#S1",
+            "start": 0,
+            "end": 21,
+            "lang": "zh",
+            "source_kind": "captain-note"
+          },
+          {
+            "record_id": "VH-5",
+            "quote": "未收到岸站确认前维持现位。",
+            "sentence_id": "VH-5#S1",
+            "start": 8,
+            "end": 21,
+            "lang": "zh",
+            "source_kind": "captain-note"
+          }
+        ],
+        "provenance_refs": [
+          "[VH-5 VH-5#S1]"
+        ]
+      },
+      {
+        "claim_id": "CL-VH-6-01-A",
+        "who_role": "shore_station",
+        "who": "岸站",
+        "speaker_role": "shore_station",
+        "reporter_role": "radio_operator",
+        "reporter": "无线电/值班报务",
+        "what": "岸站建议/提议 移船/移动（需上下文指代）。",
+        "kind": "suggestion",
+        "speech_act": "suggestion",
+        "modality": "conditional",
+        "polarity": "positive",
+        "action_key": "move_vessel",
+        "action_label": "移船/移动（需上下文指代）",
+        "vessel_id": "V-2",
+        "vessel_resolution": "sole_case_vessel_context",
+        "record_id": "VH-6",
+        "sentence_id": "VH-6#S1",
+        "provenance": [
+          {
+            "record_id": "VH-6",
+            "quote": "Shore suggests moving after the current gust;",
+            "sentence_id": "VH-6#S1",
+            "start": 0,
+            "end": 45,
+            "lang": "en",
+            "source_kind": "radio-summary"
+          },
+          {
+            "record_id": "VH-6",
+            "quote": "Shore suggests moving after the current gust;",
+            "sentence_id": "VH-6#S1",
+            "start": 0,
+            "end": 45,
+            "lang": "en",
+            "source_kind": "radio-summary"
+          }
+        ],
+        "provenance_refs": [
+          "[VH-6 VH-6#S1]"
+        ]
+      },
+      {
+        "claim_id": "CL-VH-6-02-C",
+        "who_role": "radio_operator",
+        "who": "无线电/值班报务",
+        "speaker_role": "radio_operator",
+        "reporter_role": "radio_operator",
+        "reporter": "无线电/值班报务",
+        "what": "明确说明岸站确认/许可尚未收到或尚未签发。",
+        "kind": "clearance_status",
+        "speech_act": "clearance_withheld",
+        "modality": "status",
+        "polarity": "negative",
+        "action_key": "move_vessel",
+        "action_label": null,
+        "vessel_id": "V-2",
+        "vessel_resolution": "sole_case_vessel_context",
+        "record_id": "VH-6",
+        "sentence_id": "VH-6#S2",
+        "provenance": [
+          {
+            "record_id": "VH-6",
+            "quote": "no clearance has been issued.",
+            "sentence_id": "VH-6#S2",
+            "start": 46,
+            "end": 75,
+            "lang": "en",
+            "source_kind": "radio-summary"
+          },
+          {
+            "record_id": "VH-6",
+            "quote": "no clearance has been issued.",
+            "sentence_id": "VH-6#S2",
+            "start": 46,
+            "end": 75,
+            "lang": "en",
+            "source_kind": "radio-summary"
+          }
+        ],
+        "provenance_refs": [
+          "[VH-6 VH-6#S2]"
+        ]
+      },
+      {
+        "claim_id": "CL-VH-8-01-C",
+        "who_role": "shore_station",
+        "who": "岸站",
+        "speaker_role": "shore_station",
+        "reporter_role": "translator",
+        "reporter": "翻译/转译岗",
+        "what": "转译/摘要声称岸站已批准或签发许可；在与原始岸站记录核对前不得视为已确认。",
+        "kind": "translated_clearance_claim",
+        "speech_act": "translated_clearance",
+        "modality": "unconditional",
+        "polarity": "positive",
+        "action_key": "shift_anchor",
+        "action_label": null,
+        "vessel_id": "V-2",
+        "vessel_resolution": "sole_case_vessel_context",
+        "record_id": "VH-8",
+        "sentence_id": "VH-8#S1",
+        "provenance": [
+          {
+            "record_id": "VH-8",
+            "quote": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。",
+            "sentence_id": "VH-8#S1",
+            "start": 0,
+            "end": 33,
+            "lang": "zh",
+            "source_kind": "translation"
+          },
+          {
+            "record_id": "VH-8",
+            "quote": "译文把该句写作“岸站已批准移锚",
+            "sentence_id": "VH-8#S1",
+            "start": 0,
+            "end": 15,
+            "lang": "zh",
+            "source_kind": "translation"
+          }
+        ],
+        "provenance_refs": [
+          "[VH-8 VH-8#S1]"
+        ]
+      },
+      {
+        "claim_id": "CL-VH-8-02-A",
+        "who_role": "shore_station",
+        "who": "岸站",
+        "speaker_role": "shore_station",
+        "reporter_role": "translator",
+        "reporter": "翻译/转译岗",
+        "what": "转译文本声称已批准/可执行 移锚 / shift anchor，但转译本身不是许可确认。",
+        "kind": "translated_approval_claim",
+        "speech_act": "translated_approval",
+        "modality": "unconditional",
+        "polarity": "positive",
+        "action_key": "shift_anchor",
+        "action_label": "移锚 / shift anchor",
+        "vessel_id": "V-2",
+        "vessel_resolution": "sole_case_vessel_context",
+        "record_id": "VH-8",
+        "sentence_id": "VH-8#S1",
+        "provenance": [
+          {
+            "record_id": "VH-8",
+            "quote": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。",
+            "sentence_id": "VH-8#S1",
+            "start": 0,
+            "end": 33,
+            "lang": "zh",
+            "source_kind": "translation"
+          },
+          {
+            "record_id": "VH-8",
+            "quote": "译文把该句写作“岸站已批准移锚",
+            "sentence_id": "VH-8#S1",
+            "start": 0,
+            "end": 15,
+            "lang": "zh",
+            "source_kind": "translation"
+          }
+        ],
+        "provenance_refs": [
+          "[VH-8 VH-8#S1]"
+        ]
+      },
+      {
+        "claim_id": "CL-VH-9-01-C",
+        "who_role": "shore_station",
+        "who": "岸站",
+        "speaker_role": "shore_station",
+        "reporter_role": "shore_station",
+        "reporter": "岸站",
+        "what": "出现岸站已确认、批准或签发许可的肯定表述。",
+        "kind": "clearance",
+        "speech_act": "clearance_issued",
+        "modality": "unconditional",
+        "polarity": "positive",
+        "action_key": "shift_anchor",
+        "action_label": null,
+        "vessel_id": "V-2",
+        "vessel_resolution": "sole_case_vessel_context",
+        "record_id": "VH-9",
+        "sentence_id": "VH-9#S1",
+        "provenance": [
+          {
+            "record_id": "VH-9",
+            "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+            "sentence_id": "VH-9#S1",
+            "start": 0,
+            "end": 68,
+            "lang": "en",
+            "source_kind": "shore-message"
+          },
+          {
+            "record_id": "VH-9",
+            "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+            "sentence_id": "VH-9#S1",
+            "start": 0,
+            "end": 68,
+            "lang": "en",
+            "source_kind": "shore-message"
+          }
+        ],
+        "provenance_refs": [
+          "[VH-9 VH-9#S1]"
+        ]
+      },
+      {
+        "claim_id": "CL-VH-9-02-A",
+        "who_role": "shore_station",
+        "who": "岸站",
+        "speaker_role": "shore_station",
+        "reporter_role": "shore_station",
+        "reporter": "岸站",
+        "what": "出现行动表述 移锚 / shift anchor，需结合上下文判断言语行为。",
+        "kind": "action_statement",
+        "speech_act": "statement",
+        "modality": "unknown",
+        "polarity": "positive",
+        "action_key": "shift_anchor",
+        "action_label": "移锚 / shift anchor",
+        "vessel_id": "V-2",
+        "vessel_resolution": "sole_case_vessel_context",
+        "record_id": "VH-9",
+        "sentence_id": "VH-9#S1",
+        "provenance": [
+          {
+            "record_id": "VH-9",
+            "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+            "sentence_id": "VH-9#S1",
+            "start": 0,
+            "end": 68,
+            "lang": "en",
+            "source_kind": "shore-message"
+          },
+          {
+            "record_id": "VH-9",
+            "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+            "sentence_id": "VH-9#S1",
+            "start": 0,
+            "end": 68,
+            "lang": "en",
+            "source_kind": "shore-message"
+          }
+        ],
+        "provenance_refs": [
+          "[VH-9 VH-9#S1]"
+        ]
+      }
+    ],
+    "action_cards": [
+      {
+        "id": "AC-V-2-maintain_position",
+        "action_key": "maintain_position",
+        "action_label": "维持现位",
+        "vessel_id": "V-2",
+        "vessel_candidates": [],
+        "status": "in_force",
+        "title": "维持现位",
+        "order_claim_ids": [
+          "CL-VH-5-03-A"
+        ],
+        "suggestion_claim_ids": [],
+        "clearance_claim_ids": [
+          "CL-VH-5-02-C"
+        ],
+        "report_claim_ids": [],
+        "condition_keys": [
+          "authorization.shore_clearance"
+        ],
+        "conditions": {
+          "authorization.shore_clearance": {
+            "key": "authorization.shore_clearance",
+            "label": "岸站确认/移锚许可 / shore confirmation or clearance",
+            "category": "authorization",
+            "state": "met",
+            "blocking": false,
+            "source": "captain",
+            "requirement_evidence": [
+              {
+                "record_id": "VH-5",
+                "quote": "未收到岸站确认前维持现位。",
+                "sentence_id": "VH-5#S1",
+                "start": 8,
+                "end": 21,
+                "lang": "zh",
+                "source_kind": "captain-note"
+              },
+              {
+                "record_id": "VH-6",
+                "quote": "no clearance has been issued.",
+                "sentence_id": "VH-6#S2",
+                "start": 46,
+                "end": 75,
+                "lang": "en",
+                "source_kind": "radio-summary"
+              },
+              {
+                "record_id": "VH-8",
+                "quote": "译文把该句写作“岸站已批准移锚",
+                "sentence_id": "VH-8#S1",
+                "start": 0,
+                "end": 15,
+                "lang": "zh",
+                "source_kind": "translation"
+              },
+              {
+                "record_id": "VH-9",
+                "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+                "sentence_id": "VH-9#S1",
+                "start": 0,
+                "end": 68,
+                "lang": "en",
+                "source_kind": "shore-message"
+              }
+            ],
+            "state_evidence": [
+              {
+                "record_id": "VH-5",
+                "quote": "未收到岸站确认前维持现位。",
+                "sentence_id": "VH-5#S1",
+                "start": 8,
+                "end": 21,
+                "lang": "zh",
+                "source_kind": "captain-note"
+              },
+              {
+                "record_id": "VH-6",
+                "quote": "no clearance has been issued.",
+                "sentence_id": "VH-6#S2",
+                "start": 46,
+                "end": 75,
+                "lang": "en",
+                "source_kind": "radio-summary"
+              },
+              {
+                "record_id": "VH-8",
+                "quote": "译文把该句写作“岸站已批准移锚",
+                "sentence_id": "VH-8#S1",
+                "start": 0,
+                "end": 15,
+                "lang": "zh",
+                "source_kind": "translation"
+              },
+              {
+                "record_id": "VH-9",
+                "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+                "sentence_id": "VH-9#S1",
+                "start": 0,
+                "end": 68,
+                "lang": "en",
+                "source_kind": "shore-message"
+              }
+            ],
+            "detail": {
+              "state_history": [
+                {
+                  "state": "absent",
+                  "record_id": "VH-5",
+                  "timestamp": null,
+                  "order": 1,
+                  "authoritative": true
+                },
+                {
+                  "state": "absent",
+                  "record_id": "VH-6",
+                  "timestamp": null,
+                  "order": 2,
+                  "authoritative": true
+                },
+                {
+                  "state": "unverified_claim",
+                  "record_id": "VH-8",
+                  "timestamp": null,
+                  "order": 4,
+                  "authoritative": false
+                },
+                {
+                  "state": "met",
+                  "record_id": "VH-9",
+                  "timestamp": "2026-11-26T18:05:00",
+                  "order": 5,
+                  "authoritative": true
+                }
+              ],
+              "latest_state_record": "VH-9",
+              "latest_state_order": 5,
+              "role": "termination_condition"
+            }
+          }
+        },
+        "blocker_keys": [],
+        "advisory_keys": [
+          "OB-VH-11-01-E"
+        ],
+        "timeline": [
+          {
+            "key": "equipment-OB-VH-11-01-E",
+            "label": "定位信号间歇/周期性丢失",
+            "relation": "before",
+            "timestamp": null,
+            "evidence": [
+              {
+                "record_id": "VH-11",
+                "quote": "设备员澄清：定位间歇发生在移锚之前；",
+                "sentence_id": "VH-11#S1",
+                "start": 0,
+                "end": 18,
+                "lang": "zh",
+                "source_kind": "equipment-note"
+              }
+            ],
+            "source_observation_id": "OB-VH-11-01-E"
+          }
+        ],
+        "evidence": [
+          {
+            "record_id": "VH-5",
+            "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+            "sentence_id": "VH-5#S1",
+            "start": 0,
+            "end": 21,
+            "lang": "zh",
+            "source_kind": "captain-note"
+          },
+          {
+            "record_id": "VH-5",
+            "quote": "未收到岸站确认前维持现位。",
+            "sentence_id": "VH-5#S1",
+            "start": 8,
+            "end": 21,
+            "lang": "zh",
+            "source_kind": "captain-note"
+          },
+          {
+            "record_id": "VH-7",
+            "quote": "定位每隔几分钟丢一次，时间未记录。",
+            "sentence_id": "VH-7#S1",
+            "start": 0,
+            "end": 17,
+            "lang": "zh",
+            "source_kind": "equipment-note"
+          },
+          {
+            "record_id": "VH-11",
+            "quote": "设备员澄清：定位间歇发生在移锚之前；",
+            "sentence_id": "VH-11#S1",
+            "start": 0,
+            "end": 18,
+            "lang": "zh",
+            "source_kind": "equipment-note"
+          }
+        ],
+        "revision": 4,
+        "source_record_ids": [
+          "VH-5",
+          "VH-7",
+          "VH-11"
+        ],
+        "completed": false,
+        "completion": null,
+        "immutable": false,
+        "notes": [],
+        "status_zh": "🟡 现行指令，继续执行",
+        "blocker_details": [],
+        "advisory_details": [
+          {
+            "key": "OB-VH-11-01-E",
+            "category": "equipment",
+            "label": "定位信号间歇/周期性丢失",
+            "state": "intermittent",
+            "temporal_relation": "before",
+            "evidence_refs": [
+              "[VH-11 VH-11#S1]"
+            ]
+          }
+        ],
+        "provenance_refs": [
+          "[VH-5 VH-5#S1]",
+          "[VH-7 VH-7#S1]",
+          "[VH-11 VH-11#S1]"
+        ]
+      },
+      {
+        "id": "AC-V-2-shift_anchor",
+        "action_key": "shift_anchor",
+        "action_label": "移锚",
+        "vessel_id": "V-2",
+        "vessel_candidates": [],
+        "status": "completed",
+        "title": "移锚",
+        "order_claim_ids": [
+          "CL-VH-5-01-A",
+          "CL-VH-11-01-A"
+        ],
+        "suggestion_claim_ids": [
+          "CL-VH-6-01-A"
+        ],
+        "clearance_claim_ids": [
+          "CL-VH-6-02-C",
+          "CL-VH-8-01-C",
+          "CL-VH-9-01-C"
+        ],
+        "report_claim_ids": [],
+        "condition_keys": [
+          "authority.captain_order",
+          "authorization.shore_clearance",
+          "weather.gust_passed",
+          "weather.wind_east"
+        ],
+        "conditions": {
+          "weather.wind_east": {
+            "key": "weather.wind_east",
+            "label": "风转东 / wind turns east",
+            "category": "weather",
+            "state": "met",
+            "blocking": true,
+            "source": "captain",
+            "requirement_evidence": [
+              {
+                "record_id": "VH-5",
+                "quote": "风转东后再移锚",
+                "sentence_id": "VH-5#S1",
+                "start": 0,
+                "end": 7,
+                "lang": "zh",
+                "source_kind": "captain-note"
+              }
+            ],
+            "state_evidence": [
+              {
+                "record_id": "VH-10",
+                "quote": "18:10 风已转东",
+                "sentence_id": "VH-10#S1",
+                "start": 0,
+                "end": 10,
+                "lang": "zh",
+                "source_kind": "captain-log"
+              }
+            ],
+            "detail": {
+              "state_history": [
+                {
+                  "state": "met",
+                  "record_id": "VH-10",
+                  "timestamp": "2026-11-26T18:10:00",
+                  "order": 6,
+                  "authoritative": true
+                }
+              ],
+              "latest_state_record": "VH-10",
+              "latest_state_order": 6
+            }
+          },
+          "weather.gust_passed": {
+            "key": "weather.gust_passed",
+            "label": "当前阵风过去 / current gust passes",
+            "category": "weather",
+            "state": "required",
+            "blocking": false,
+            "source": "shore_suggestion",
+            "requirement_evidence": [
+              {
+                "record_id": "VH-6",
+                "quote": "Shore suggests moving after the current gust;",
+                "sentence_id": "VH-6#S1",
+                "start": 0,
+                "end": 45,
+                "lang": "en",
+                "source_kind": "radio-summary"
+              }
+            ],
+            "state_evidence": [],
+            "detail": {
+              "state_history": []
+            }
+          },
+          "authorization.shore_clearance": {
+            "key": "authorization.shore_clearance",
+            "label": "岸站确认/作业许可已签发并收到",
+            "category": "authorization",
+            "state": "met",
+            "blocking": true,
+            "source": "captain",
+            "requirement_evidence": [
+              {
+                "record_id": "VH-5",
+                "quote": "未收到岸站确认前维持现位。",
+                "sentence_id": "VH-5#S1",
+                "start": 8,
+                "end": 21,
+                "lang": "zh",
+                "source_kind": "captain-note"
+              },
+              {
+                "record_id": "VH-6",
+                "quote": "no clearance has been issued.",
+                "sentence_id": "VH-6#S2",
+                "start": 46,
+                "end": 75,
+                "lang": "en",
+                "source_kind": "radio-summary"
+              },
+              {
+                "record_id": "VH-8",
+                "quote": "译文把该句写作“岸站已批准移锚",
+                "sentence_id": "VH-8#S1",
+                "start": 0,
+                "end": 15,
+                "lang": "zh",
+                "source_kind": "translation"
+              },
+              {
+                "record_id": "VH-9",
+                "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+                "sentence_id": "VH-9#S1",
+                "start": 0,
+                "end": 68,
+                "lang": "en",
+                "source_kind": "shore-message"
+              }
+            ],
+            "state_evidence": [
+              {
+                "record_id": "VH-5",
+                "quote": "未收到岸站确认前维持现位。",
+                "sentence_id": "VH-5#S1",
+                "start": 8,
+                "end": 21,
+                "lang": "zh",
+                "source_kind": "captain-note"
+              },
+              {
+                "record_id": "VH-6",
+                "quote": "no clearance has been issued.",
+                "sentence_id": "VH-6#S2",
+                "start": 46,
+                "end": 75,
+                "lang": "en",
+                "source_kind": "radio-summary"
+              },
+              {
+                "record_id": "VH-8",
+                "quote": "译文把该句写作“岸站已批准移锚",
+                "sentence_id": "VH-8#S1",
+                "start": 0,
+                "end": 15,
+                "lang": "zh",
+                "source_kind": "translation"
+              },
+              {
+                "record_id": "VH-9",
+                "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+                "sentence_id": "VH-9#S1",
+                "start": 0,
+                "end": 68,
+                "lang": "en",
+                "source_kind": "shore-message"
+              }
+            ],
+            "detail": {
+              "state_history": [
+                {
+                  "state": "absent",
+                  "record_id": "VH-5",
+                  "timestamp": null,
+                  "order": 1,
+                  "authoritative": true
+                },
+                {
+                  "state": "absent",
+                  "record_id": "VH-6",
+                  "timestamp": null,
+                  "order": 2,
+                  "authoritative": true
+                },
+                {
+                  "state": "unverified_claim",
+                  "record_id": "VH-8",
+                  "timestamp": null,
+                  "order": 4,
+                  "authoritative": false
+                },
+                {
+                  "state": "met",
+                  "record_id": "VH-9",
+                  "timestamp": "2026-11-26T18:05:00",
+                  "order": 5,
+                  "authoritative": true
+                }
+              ],
+              "latest_state_record": "VH-9",
+              "latest_state_order": 5
+            }
+          },
+          "authority.captain_order": {
+            "key": "authority.captain_order",
+            "label": "船长命令（岸站建议/转译不能替代）",
+            "category": "authority",
+            "state": "met",
+            "blocking": true,
+            "source": "captain_order",
+            "requirement_evidence": [],
+            "state_evidence": [
+              {
+                "record_id": "VH-5",
+                "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+                "sentence_id": "VH-5#S1",
+                "start": 0,
+                "end": 21,
+                "lang": "zh",
+                "source_kind": "captain-note"
+              },
+              {
+                "record_id": "VH-5",
+                "quote": "风转东后再移锚",
+                "sentence_id": "VH-5#S1",
+                "start": 0,
+                "end": 7,
+                "lang": "zh",
+                "source_kind": "captain-note"
+              },
+              {
+                "record_id": "VH-11",
+                "quote": "设备员澄清：定位间歇发生在移锚之前；",
+                "sentence_id": "VH-11#S1",
+                "start": 0,
+                "end": 18,
+                "lang": "zh",
+                "source_kind": "equipment-note"
+              },
+              {
+                "record_id": "VH-11",
+                "quote": "设备员澄清：定位间歇发生在移锚之前；",
+                "sentence_id": "VH-11#S1",
+                "start": 0,
+                "end": 18,
+                "lang": "zh",
+                "source_kind": "equipment-note"
+              }
+            ],
+            "detail": {}
+          }
+        },
+        "blocker_keys": [],
+        "advisory_keys": [
+          "OB-VH-11-01-E",
+          "weather.gust_passed"
+        ],
+        "timeline": [
+          {
+            "key": "equipment-OB-VH-11-01-E",
+            "label": "定位信号间歇/周期性丢失",
+            "relation": "before",
+            "timestamp": null,
+            "evidence": [
+              {
+                "record_id": "VH-11",
+                "quote": "设备员澄清：定位间歇发生在移锚之前；",
+                "sentence_id": "VH-11#S1",
+                "start": 0,
+                "end": 18,
+                "lang": "zh",
+                "source_kind": "equipment-note"
+              }
+            ],
+            "source_observation_id": "OB-VH-11-01-E"
+          }
+        ],
+        "evidence": [
+          {
+            "record_id": "VH-5",
+            "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+            "sentence_id": "VH-5#S1",
+            "start": 0,
+            "end": 21,
+            "lang": "zh",
+            "source_kind": "captain-note"
+          },
+          {
+            "record_id": "VH-5",
+            "quote": "风转东后再移锚",
+            "sentence_id": "VH-5#S1",
+            "start": 0,
+            "end": 7,
+            "lang": "zh",
+            "source_kind": "captain-note"
+          },
+          {
+            "record_id": "VH-6",
+            "quote": "Shore suggests moving after the current gust;",
+            "sentence_id": "VH-6#S1",
+            "start": 0,
+            "end": 45,
+            "lang": "en",
+            "source_kind": "radio-summary"
+          },
+          {
+            "record_id": "VH-6",
+            "quote": "no clearance has been issued.",
+            "sentence_id": "VH-6#S2",
+            "start": 46,
+            "end": 75,
+            "lang": "en",
+            "source_kind": "radio-summary"
+          },
+          {
+            "record_id": "VH-8",
+            "quote": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。",
+            "sentence_id": "VH-8#S1",
+            "start": 0,
+            "end": 33,
+            "lang": "zh",
+            "source_kind": "translation"
+          },
+          {
+            "record_id": "VH-8",
+            "quote": "译文把该句写作“岸站已批准移锚",
+            "sentence_id": "VH-8#S1",
+            "start": 0,
+            "end": 15,
+            "lang": "zh",
+            "source_kind": "translation"
+          },
+          {
+            "record_id": "VH-9",
+            "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+            "sentence_id": "VH-9#S1",
+            "start": 0,
+            "end": 68,
+            "lang": "en",
+            "source_kind": "shore-message"
+          },
+          {
+            "record_id": "VH-11",
+            "quote": "设备员澄清：定位间歇发生在移锚之前；",
+            "sentence_id": "VH-11#S1",
+            "start": 0,
+            "end": 18,
+            "lang": "zh",
+            "source_kind": "equipment-note"
+          },
+          {
+            "record_id": "VH-7",
+            "quote": "定位每隔几分钟丢一次，时间未记录。",
+            "sentence_id": "VH-7#S1",
+            "start": 0,
+            "end": 17,
+            "lang": "zh",
+            "source_kind": "equipment-note"
+          }
+        ],
+        "revision": 8,
+        "source_record_ids": [
+          "VH-5",
+          "VH-6",
+          "VH-8",
+          "VH-9",
+          "VH-11",
+          "VH-7"
+        ],
+        "completed": true,
+        "completion": {
+          "action_key": "shift_anchor",
+          "completed_at": "2026-11-26T18:20:00",
+          "record_id": "TRACK-1820",
+          "evidence": {
+            "record_id": "TRACK-1820",
+            "quote": "{\"id\": \"TRACK-1820\", \"kind\": \"track-point\", \"timestamp\": \"2026-11-26T18:20:00\", \"lat\": 30.125, \"lon\": 122.451, \"action_key\": \"shift_anchor\", \"event\": \"anchor_move\", \"completed\": true, \"source\": \"fictional voyage track\"}"
+          },
+          "explicit_track_record": true
+        },
+        "immutable": true,
+        "notes": [],
+        "status_zh": "⚓ 已完成并归档",
+        "blocker_details": [],
+        "advisory_details": [
+          {
+            "key": "OB-VH-11-01-E",
+            "category": "equipment",
+            "label": "定位信号间歇/周期性丢失",
+            "state": "intermittent",
+            "temporal_relation": "before",
+            "evidence_refs": [
+              "[VH-11 VH-11#S1]"
+            ]
+          },
+          {
+            "key": "weather.gust_passed",
+            "label": "当前阵风过去 / current gust passes",
+            "category": "weather",
+            "state": "required",
+            "blocking": false,
+            "source": "shore_suggestion",
+            "requirement_evidence": [
+              {
+                "record_id": "VH-6",
+                "quote": "Shore suggests moving after the current gust;",
+                "sentence_id": "VH-6#S1",
+                "start": 0,
+                "end": 45,
+                "lang": "en",
+                "source_kind": "radio-summary"
+              }
+            ],
+            "state_evidence": [],
+            "detail": {
+              "state_history": []
+            },
+            "state_zh": "待满足",
+            "evidence_refs": [
+              "[VH-6 VH-6#S1]"
+            ]
+          }
+        ],
+        "provenance_refs": [
+          "[VH-5 VH-5#S1]",
+          "[VH-6 VH-6#S1]",
+          "[VH-6 VH-6#S2]",
+          "[VH-8 VH-8#S1]",
+          "[VH-9 VH-9#S1]",
+          "[VH-11 VH-11#S1]",
+          "[VH-7 VH-7#S1]"
+        ]
+      }
+    ],
+    "blocked_actions": [],
+    "ready_actions": [],
+    "active_instructions": [
+      {
+        "card_id": "AC-V-2-maintain_position",
+        "title": "维持现位",
+        "action_key": "maintain_position",
+        "vessel_id": "V-2",
+        "status": "in_force",
+        "status_zh": "🟡 现行指令，继续执行",
+        "blockers": [],
+        "advisories": [
+          {
+            "key": "OB-VH-11-01-E",
+            "label": "定位信号间歇/周期性丢失",
+            "state_zh": "intermittent",
+            "evidence_refs": [
+              "[VH-11 VH-11#S1]"
+            ]
+          }
+        ],
+        "provenance_refs": [
+          "[VH-5 VH-5#S1]",
+          "[VH-7 VH-7#S1]",
+          "[VH-11 VH-11#S1]"
+        ]
+      }
+    ],
+    "completed_actions": [
+      {
+        "card_id": "AC-V-2-shift_anchor",
+        "title": "移锚",
+        "action_key": "shift_anchor",
+        "vessel_id": "V-2",
+        "status": "completed",
+        "status_zh": "⚓ 已完成并归档",
+        "blockers": [],
+        "advisories": [
+          {
+            "key": "OB-VH-11-01-E",
+            "label": "定位信号间歇/周期性丢失",
+            "state_zh": "intermittent",
+            "evidence_refs": [
+              "[VH-11 VH-11#S1]"
+            ]
+          },
+          {
+            "key": "weather.gust_passed",
+            "label": "当前阵风过去 / current gust passes",
+            "state_zh": "待满足",
+            "evidence_refs": [
+              "[VH-6 VH-6#S1]"
+            ]
+          }
+        ],
+        "provenance_refs": [
+          "[VH-5 VH-5#S1]",
+          "[VH-6 VH-6#S1]",
+          "[VH-6 VH-6#S2]",
+          "[VH-8 VH-8#S1]",
+          "[VH-9 VH-9#S1]",
+          "[VH-11 VH-11#S1]",
+          "[VH-7 VH-7#S1]"
+        ]
+      }
+    ],
+    "equipment_status": [
+      {
+        "id": "OB-VH-7-01-E",
+        "record_id": "VH-7",
+        "sentence_id": "VH-7#S1",
+        "category": "equipment",
+        "subject": "positioning_system",
+        "key": "equipment.positioning.intermittent",
+        "label": "定位信号间歇/周期性丢失",
+        "state": "intermittent",
+        "value": "每隔几分钟丢一次",
+        "time_ref": null,
+        "timestamp": null,
+        "temporal_relation": null,
+        "reference_event": null,
+        "clarification": false,
+        "vessel": {
+          "vessel_id": "V-2",
+          "resolution": "sole_case_vessel_context",
+          "mention": null,
+          "candidates": [],
+          "evidence": {
+            "record_id": "VH-7",
+            "quote": "定位每隔几分钟丢一次，时间未记录。",
+            "sentence_id": null,
+            "start": null,
+            "end": null,
+            "lang": "zh",
+            "source_kind": "equipment-note"
+          }
+        },
+        "evidence": [
+          {
+            "record_id": "VH-7",
+            "quote": "定位每隔几分钟丢一次，时间未记录。",
+            "sentence_id": "VH-7#S1",
+            "start": 0,
+            "end": 17,
+            "lang": "zh",
+            "source_kind": "equipment-note"
+          }
+        ],
+        "attributes": {
+          "timing_unknown": true,
+          "subject_match": "定位",
+          "ingest_order": 3,
+          "applicability": "before_or_unclear_relative_to_action"
+        }
+      },
+      {
+        "id": "OB-VH-11-01-E",
+        "record_id": "VH-11",
+        "sentence_id": "VH-11#S1",
+        "category": "equipment",
+        "subject": "positioning_system",
+        "key": "equipment.positioning.intermittent",
+        "label": "定位信号间歇/周期性丢失",
+        "state": "intermittent",
+        "value": null,
+        "time_ref": null,
+        "timestamp": null,
+        "temporal_relation": "before",
+        "reference_event": "shift_anchor",
+        "clarification": true,
+        "vessel": {
+          "vessel_id": "V-2",
+          "resolution": "sole_case_vessel_context",
+          "mention": null,
+          "candidates": [],
+          "evidence": {
+            "record_id": "VH-11",
+            "quote": "设备员澄清：定位间歇发生在移锚之前；当前信号仍需监视。",
+            "sentence_id": null,
+            "start": null,
+            "end": null,
+            "lang": "zh",
+            "source_kind": "equipment-note"
+          }
+        },
+        "evidence": [
+          {
+            "record_id": "VH-11",
+            "quote": "设备员澄清：定位间歇发生在移锚之前；",
+            "sentence_id": "VH-11#S1",
+            "start": 0,
+            "end": 18,
+            "lang": "zh",
+            "source_kind": "equipment-note"
+          }
+        ],
+        "attributes": {
+          "timing_unknown": false,
+          "subject_match": "定位",
+          "ingest_order": 7,
+          "applicability": "before_or_unclear_relative_to_action"
+        }
+      }
+    ],
+    "sea_state": [
+      {
+        "id": "OB-VH-10-02-S",
+        "record_id": "VH-10",
+        "sentence_id": "VH-10#S1",
+        "category": "sea_state",
+        "subject": "浪高",
+        "key": "sea_state.numeric.",
+        "label": "浪高 1.6米",
+        "state": "observed",
+        "value": "1.6米",
+        "time_ref": "18:10",
+        "timestamp": "2026-11-26T18:10:00",
+        "temporal_relation": null,
+        "reference_event": null,
+        "clarification": false,
+        "vessel": {
+          "vessel_id": "V-2",
+          "resolution": "sole_case_vessel_context",
+          "mention": null,
+          "candidates": [],
+          "evidence": {
+            "record_id": "VH-10",
+            "quote": "18:10 风已转东，浪高1.6米，轻浪。",
+            "sentence_id": null,
+            "start": null,
+            "end": null,
+            "lang": "zh",
+            "source_kind": "captain-log"
+          }
+        },
+        "evidence": [
+          {
+            "record_id": "VH-10",
+            "quote": "浪高1.6米",
+            "sentence_id": "VH-10#S1",
+            "start": 11,
+            "end": 17,
+            "lang": "zh",
+            "source_kind": "captain-log"
+          }
+        ],
+        "attributes": {
+          "numeric": 1.6,
+          "unit": "米",
+          "ingest_order": 6
+        }
+      },
+      {
+        "id": "OB-VH-10-04-Q",
+        "record_id": "VH-10",
+        "sentence_id": "VH-10#S1",
+        "category": "sea_state",
+        "subject": "sea_state",
+        "key": "sea_state.qualitative",
+        "label": "轻浪",
+        "state": "observed",
+        "value": "轻浪",
+        "time_ref": "18:10",
+        "timestamp": "2026-11-26T18:10:00",
+        "temporal_relation": null,
+        "reference_event": null,
+        "clarification": false,
+        "vessel": {
+          "vessel_id": "V-2",
+          "resolution": "sole_case_vessel_context",
+          "mention": null,
+          "candidates": [],
+          "evidence": {
+            "record_id": "VH-10",
+            "quote": "18:10 风已转东，浪高1.6米，轻浪。",
+            "sentence_id": null,
+            "start": null,
+            "end": null,
+            "lang": "zh",
+            "source_kind": "captain-log"
+          }
+        },
+        "evidence": [
+          {
+            "record_id": "VH-10",
+            "quote": "轻浪。",
+            "sentence_id": "VH-10#S1",
+            "start": 18,
+            "end": 21,
+            "lang": "zh",
+            "source_kind": "captain-log"
+          }
+        ],
+        "attributes": {
+          "ingest_order": 6
+        }
+      }
+    ],
+    "sea_conditions": [
+      {
+        "key": "weather.gust_passed",
+        "label": "当前阵风过去 / current gust passes",
+        "category": "weather",
+        "state": "required",
+        "blocking": false,
+        "source": "shore_suggestion",
+        "requirement_evidence": [
+          {
+            "record_id": "VH-6",
+            "quote": "Shore suggests moving after the current gust;",
+            "sentence_id": "VH-6#S1",
+            "start": 0,
+            "end": 45,
+            "lang": "en",
+            "source_kind": "radio-summary"
+          }
+        ],
+        "state_evidence": [],
+        "detail": {
+          "state_history": []
+        },
+        "state_zh": "待满足",
+        "evidence_refs": [
+          "[VH-6 VH-6#S1]"
+        ]
+      },
+      {
+        "key": "weather.wind_east",
+        "label": "风转东 / wind turns east",
+        "category": "weather",
+        "state": "met",
+        "blocking": true,
+        "source": "captain",
+        "requirement_evidence": [
+          {
+            "record_id": "VH-5",
+            "quote": "风转东后再移锚",
+            "sentence_id": "VH-5#S1",
+            "start": 0,
+            "end": 7,
+            "lang": "zh",
+            "source_kind": "captain-note"
+          }
+        ],
+        "state_evidence": [
+          {
+            "record_id": "VH-10",
+            "quote": "18:10 风已转东",
+            "sentence_id": "VH-10#S1",
+            "start": 0,
+            "end": 10,
+            "lang": "zh",
+            "source_kind": "captain-log"
+          }
+        ],
+        "detail": {
+          "state_history": [
+            {
+              "state": "met",
+              "record_id": "VH-10",
+              "timestamp": "2026-11-26T18:10:00",
+              "order": 6,
+              "authoritative": true
+            }
+          ],
+          "latest_state_record": "VH-10",
+          "latest_state_order": 6
+        },
+        "state_zh": "已确认/已满足",
+        "evidence_refs": [
+          "[VH-10 VH-10#S1]"
+        ]
+      }
+    ],
+    "issues": [
+      {
+        "code": "equipment_timing_unknown",
+        "severity": "info",
+        "message": "设备异常仅有间歇/丢失报告，尚未记录其与移锚的时间先后。",
+        "evidence": [
+          {
+            "record_id": "VH-7",
+            "quote": "定位每隔几分钟丢一次，时间未记录。",
+            "sentence_id": "VH-7#S1",
+            "start": 0,
+            "end": 17,
+            "lang": "zh",
+            "source_kind": "equipment-note"
+          }
+        ],
+        "details": {}
+      },
+      {
+        "code": "unverified_translation_as_clearance",
+        "severity": "warning",
+        "message": "“已批准”来自转译/摘要文本；条件句或许可状态可能在翻译中被压成无条件许可。",
+        "evidence": [
+          {
+            "record_id": "VH-8",
+            "quote": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。",
+            "sentence_id": "VH-8#S1",
+            "start": 0,
+            "end": 33,
+            "lang": "zh",
+            "source_kind": "translation"
+          },
+          {
+            "record_id": "VH-8",
+            "quote": "译文把该句写作“岸站已批准移锚",
+            "sentence_id": "VH-8#S1",
+            "start": 0,
+            "end": 15,
+            "lang": "zh",
+            "source_kind": "translation"
+          }
+        ],
+        "details": {
+          "action_key": "shift_anchor"
+        }
+      },
+      {
+        "code": "timing_clarification",
+        "severity": "info",
+        "message": "新日志澄清设备事件发生在移锚之前。",
+        "evidence": [
+          {
+            "record_id": "VH-11",
+            "quote": "设备员澄清：定位间歇发生在移锚之前；",
+            "sentence_id": "VH-11#S1",
+            "start": 0,
+            "end": 18,
+            "lang": "zh",
+            "source_kind": "equipment-note"
+          }
+        ],
+        "details": {
+          "temporal_relation": "before",
+          "observation_id": "OB-VH-11-01-E"
+        }
+      },
+      {
+        "code": "contextual_action_coreference",
+        "severity": "info",
+        "message": "“moving/移动”按同船唯一已知移锚事项指代到移锚；该关联保留原句证据。",
+        "evidence": [
+          {
+            "record_id": "VH-6",
+            "quote": "Shore suggests moving after the current gust;",
+            "sentence_id": "VH-6#S1",
+            "start": 0,
+            "end": 45,
+            "lang": "en",
+            "source_kind": "radio-summary"
+          },
+          {
+            "record_id": "VH-6",
+            "quote": "Shore suggests moving after the current gust;",
+            "sentence_id": "VH-6#S1",
+            "start": 0,
+            "end": 45,
+            "lang": "en",
+            "source_kind": "radio-summary"
+          }
+        ],
+        "details": {
+          "claim_id": "CL-VH-6-01-A",
+          "resolved_action_key": "shift_anchor"
+        }
+      }
+    ],
+    "next_watch": {
+      "continue_instructions": [
+        {
+          "card_id": "AC-V-2-maintain_position",
+          "title": "维持现位",
+          "action_key": "maintain_position",
+          "vessel_id": "V-2",
+          "status": "in_force",
+          "status_zh": "🟡 现行指令，继续执行",
+          "blockers": [],
+          "advisories": [
+            {
+              "key": "OB-VH-11-01-E",
+              "label": "定位信号间歇/周期性丢失",
+              "state_zh": "intermittent",
+              "evidence_refs": [
+                "[VH-11 VH-11#S1]"
+              ]
+            }
+          ],
+          "provenance_refs": [
+            "[VH-5 VH-5#S1]",
+            "[VH-7 VH-7#S1]",
+            "[VH-11 VH-11#S1]"
+          ]
+        }
+      ],
+      "do_not_start_until_unblocked": [],
+      "ready_for_command_decision": [],
+      "completed_do_not_rewrite": [
+        {
+          "card_id": "AC-V-2-shift_anchor",
+          "title": "移锚",
+          "action_key": "shift_anchor",
+          "vessel_id": "V-2",
+          "status": "completed",
+          "status_zh": "⚓ 已完成并归档",
+          "blockers": [],
+          "advisories": [
+            {
+              "key": "OB-VH-11-01-E",
+              "label": "定位信号间歇/周期性丢失",
+              "state_zh": "intermittent",
+              "evidence_refs": [
+                "[VH-11 VH-11#S1]"
+              ]
+            },
+            {
+              "key": "weather.gust_passed",
+              "label": "当前阵风过去 / current gust passes",
+              "state_zh": "待满足",
+              "evidence_refs": [
+                "[VH-6 VH-6#S1]"
+              ]
+            }
+          ],
+          "provenance_refs": [
+            "[VH-5 VH-5#S1]",
+            "[VH-6 VH-6#S1]",
+            "[VH-6 VH-6#S2]",
+            "[VH-8 VH-8#S1]",
+            "[VH-9 VH-9#S1]",
+            "[VH-11 VH-11#S1]",
+            "[VH-7 VH-7#S1]"
+          ]
+        }
+      ],
+      "confirmed_conditions": [
+        {
+          "key": "authorization.shore_clearance",
+          "label": "岸站确认/移锚许可 / shore confirmation or clearance",
+          "category": "authorization",
+          "state": "met",
+          "blocking": true,
+          "source": "captain",
+          "requirement_evidence": [
+            {
+              "record_id": "VH-5",
+              "quote": "未收到岸站确认前维持现位。",
+              "sentence_id": "VH-5#S1",
+              "start": 8,
+              "end": 21,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            },
+            {
+              "record_id": "VH-6",
+              "quote": "no clearance has been issued.",
+              "sentence_id": "VH-6#S2",
+              "start": 46,
+              "end": 75,
+              "lang": "en",
+              "source_kind": "radio-summary"
+            },
+            {
+              "record_id": "VH-8",
+              "quote": "译文把该句写作“岸站已批准移锚",
+              "sentence_id": "VH-8#S1",
+              "start": 0,
+              "end": 15,
+              "lang": "zh",
+              "source_kind": "translation"
+            },
+            {
+              "record_id": "VH-9",
+              "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+              "sentence_id": "VH-9#S1",
+              "start": 0,
+              "end": 68,
+              "lang": "en",
+              "source_kind": "shore-message"
+            }
+          ],
+          "state_evidence": [
+            {
+              "record_id": "VH-5",
+              "quote": "未收到岸站确认前维持现位。",
+              "sentence_id": "VH-5#S1",
+              "start": 8,
+              "end": 21,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            },
+            {
+              "record_id": "VH-6",
+              "quote": "no clearance has been issued.",
+              "sentence_id": "VH-6#S2",
+              "start": 46,
+              "end": 75,
+              "lang": "en",
+              "source_kind": "radio-summary"
+            },
+            {
+              "record_id": "VH-8",
+              "quote": "译文把该句写作“岸站已批准移锚",
+              "sentence_id": "VH-8#S1",
+              "start": 0,
+              "end": 15,
+              "lang": "zh",
+              "source_kind": "translation"
+            },
+            {
+              "record_id": "VH-9",
+              "quote": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+              "sentence_id": "VH-9#S1",
+              "start": 0,
+              "end": 68,
+              "lang": "en",
+              "source_kind": "shore-message"
+            }
+          ],
+          "detail": {
+            "state_history": [
+              {
+                "state": "absent",
+                "record_id": "VH-5",
+                "timestamp": null,
+                "order": 1,
+                "authoritative": true
+              },
+              {
+                "state": "absent",
+                "record_id": "VH-6",
+                "timestamp": null,
+                "order": 2,
+                "authoritative": true
+              },
+              {
+                "state": "unverified_claim",
+                "record_id": "VH-8",
+                "timestamp": null,
+                "order": 4,
+                "authoritative": false
+              },
+              {
+                "state": "met",
+                "record_id": "VH-9",
+                "timestamp": "2026-11-26T18:05:00",
+                "order": 5,
+                "authoritative": true
+              }
+            ],
+            "latest_state_record": "VH-9",
+            "latest_state_order": 5
+          },
+          "state_zh": "已确认/已满足",
+          "evidence_refs": [
+            "[VH-5 VH-5#S1]",
+            "[VH-6 VH-6#S2]",
+            "[VH-8 VH-8#S1]",
+            "[VH-9 VH-9#S1]"
+          ]
+        },
+        {
+          "key": "weather.wind_east",
+          "label": "风转东 / wind turns east",
+          "category": "weather",
+          "state": "met",
+          "blocking": true,
+          "source": "captain",
+          "requirement_evidence": [
+            {
+              "record_id": "VH-5",
+              "quote": "风转东后再移锚",
+              "sentence_id": "VH-5#S1",
+              "start": 0,
+              "end": 7,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            }
+          ],
+          "state_evidence": [
+            {
+              "record_id": "VH-10",
+              "quote": "18:10 风已转东",
+              "sentence_id": "VH-10#S1",
+              "start": 0,
+              "end": 10,
+              "lang": "zh",
+              "source_kind": "captain-log"
+            }
+          ],
+          "detail": {
+            "state_history": [
+              {
+                "state": "met",
+                "record_id": "VH-10",
+                "timestamp": "2026-11-26T18:10:00",
+                "order": 6,
+                "authoritative": true
+              }
+            ],
+            "latest_state_record": "VH-10",
+            "latest_state_order": 6
+          },
+          "state_zh": "已确认/已满足",
+          "evidence_refs": [
+            "[VH-10 VH-10#S1]"
+          ]
+        },
+        {
+          "key": "authority.captain_order",
+          "label": "船长命令（岸站建议/转译不能替代）",
+          "category": "authority",
+          "state": "met",
+          "blocking": true,
+          "source": "captain_order",
+          "requirement_evidence": [],
+          "state_evidence": [
+            {
+              "record_id": "VH-5",
+              "quote": "风转东后再移锚，未收到岸站确认前维持现位。",
+              "sentence_id": "VH-5#S1",
+              "start": 0,
+              "end": 21,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            },
+            {
+              "record_id": "VH-5",
+              "quote": "风转东后再移锚",
+              "sentence_id": "VH-5#S1",
+              "start": 0,
+              "end": 7,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            },
+            {
+              "record_id": "VH-11",
+              "quote": "设备员澄清：定位间歇发生在移锚之前；",
+              "sentence_id": "VH-11#S1",
+              "start": 0,
+              "end": 18,
+              "lang": "zh",
+              "source_kind": "equipment-note"
+            },
+            {
+              "record_id": "VH-11",
+              "quote": "设备员澄清：定位间歇发生在移锚之前；",
+              "sentence_id": "VH-11#S1",
+              "start": 0,
+              "end": 18,
+              "lang": "zh",
+              "source_kind": "equipment-note"
+            }
+          ],
+          "detail": {},
+          "state_zh": "已确认/已满足",
+          "evidence_refs": [
+            "[VH-5 VH-5#S1]",
+            "[VH-11 VH-11#S1]"
+          ],
+          "action_card_id": "AC-V-2-shift_anchor"
+        }
+      ],
+      "unresolved_blocking_conditions": [],
+      "sea_conditions": [
+        {
+          "key": "weather.gust_passed",
+          "label": "当前阵风过去 / current gust passes",
+          "category": "weather",
+          "state": "required",
+          "blocking": false,
+          "source": "shore_suggestion",
+          "requirement_evidence": [
+            {
+              "record_id": "VH-6",
+              "quote": "Shore suggests moving after the current gust;",
+              "sentence_id": "VH-6#S1",
+              "start": 0,
+              "end": 45,
+              "lang": "en",
+              "source_kind": "radio-summary"
+            }
+          ],
+          "state_evidence": [],
+          "detail": {
+            "state_history": []
+          },
+          "state_zh": "待满足",
+          "evidence_refs": [
+            "[VH-6 VH-6#S1]"
+          ]
+        },
+        {
+          "key": "weather.wind_east",
+          "label": "风转东 / wind turns east",
+          "category": "weather",
+          "state": "met",
+          "blocking": true,
+          "source": "captain",
+          "requirement_evidence": [
+            {
+              "record_id": "VH-5",
+              "quote": "风转东后再移锚",
+              "sentence_id": "VH-5#S1",
+              "start": 0,
+              "end": 7,
+              "lang": "zh",
+              "source_kind": "captain-note"
+            }
+          ],
+          "state_evidence": [
+            {
+              "record_id": "VH-10",
+              "quote": "18:10 风已转东",
+              "sentence_id": "VH-10#S1",
+              "start": 0,
+              "end": 10,
+              "lang": "zh",
+              "source_kind": "captain-log"
+            }
+          ],
+          "detail": {
+            "state_history": [
+              {
+                "state": "met",
+                "record_id": "VH-10",
+                "timestamp": "2026-11-26T18:10:00",
+                "order": 6,
+                "authoritative": true
+              }
+            ],
+            "latest_state_record": "VH-10",
+            "latest_state_order": 6
+          },
+          "state_zh": "已确认/已满足",
+          "evidence_refs": [
+            "[VH-10 VH-10#S1]"
+          ]
+        }
+      ],
+      "equipment_watch": [
+        {
+          "id": "OB-VH-7-01-E",
+          "record_id": "VH-7",
+          "sentence_id": "VH-7#S1",
+          "category": "equipment",
+          "subject": "positioning_system",
+          "key": "equipment.positioning.intermittent",
+          "label": "定位信号间歇/周期性丢失",
+          "state": "intermittent",
+          "value": "每隔几分钟丢一次",
+          "time_ref": null,
+          "timestamp": null,
+          "temporal_relation": null,
+          "reference_event": null,
+          "clarification": false,
+          "vessel": {
+            "vessel_id": "V-2",
+            "resolution": "sole_case_vessel_context",
+            "mention": null,
+            "candidates": [],
+            "evidence": {
+              "record_id": "VH-7",
+              "quote": "定位每隔几分钟丢一次，时间未记录。",
+              "sentence_id": null,
+              "start": null,
+              "end": null,
+              "lang": "zh",
+              "source_kind": "equipment-note"
+            }
+          },
+          "evidence": [
+            {
+              "record_id": "VH-7",
+              "quote": "定位每隔几分钟丢一次，时间未记录。",
+              "sentence_id": "VH-7#S1",
+              "start": 0,
+              "end": 17,
+              "lang": "zh",
+              "source_kind": "equipment-note"
+            }
+          ],
+          "attributes": {
+            "timing_unknown": true,
+            "subject_match": "定位",
+            "ingest_order": 3,
+            "applicability": "before_or_unclear_relative_to_action"
+          }
+        },
+        {
+          "id": "OB-VH-11-01-E",
+          "record_id": "VH-11",
+          "sentence_id": "VH-11#S1",
+          "category": "equipment",
+          "subject": "positioning_system",
+          "key": "equipment.positioning.intermittent",
+          "label": "定位信号间歇/周期性丢失",
+          "state": "intermittent",
+          "value": null,
+          "time_ref": null,
+          "timestamp": null,
+          "temporal_relation": "before",
+          "reference_event": "shift_anchor",
+          "clarification": true,
+          "vessel": {
+            "vessel_id": "V-2",
+            "resolution": "sole_case_vessel_context",
+            "mention": null,
+            "candidates": [],
+            "evidence": {
+              "record_id": "VH-11",
+              "quote": "设备员澄清：定位间歇发生在移锚之前；当前信号仍需监视。",
+              "sentence_id": null,
+              "start": null,
+              "end": null,
+              "lang": "zh",
+              "source_kind": "equipment-note"
+            }
+          },
+          "evidence": [
+            {
+              "record_id": "VH-11",
+              "quote": "设备员澄清：定位间歇发生在移锚之前；",
+              "sentence_id": "VH-11#S1",
+              "start": 0,
+              "end": 18,
+              "lang": "zh",
+              "source_kind": "equipment-note"
+            }
+          ],
+          "attributes": {
+            "timing_unknown": false,
+            "subject_match": "定位",
+            "ingest_order": 7,
+            "applicability": "before_or_unclear_relative_to_action"
+          }
+        }
+      ],
+      "sea_state_watch": [
+        {
+          "id": "OB-VH-10-02-S",
+          "record_id": "VH-10",
+          "sentence_id": "VH-10#S1",
+          "category": "sea_state",
+          "subject": "浪高",
+          "key": "sea_state.numeric.",
+          "label": "浪高 1.6米",
+          "state": "observed",
+          "value": "1.6米",
+          "time_ref": "18:10",
+          "timestamp": "2026-11-26T18:10:00",
+          "temporal_relation": null,
+          "reference_event": null,
+          "clarification": false,
+          "vessel": {
+            "vessel_id": "V-2",
+            "resolution": "sole_case_vessel_context",
+            "mention": null,
+            "candidates": [],
+            "evidence": {
+              "record_id": "VH-10",
+              "quote": "18:10 风已转东，浪高1.6米，轻浪。",
+              "sentence_id": null,
+              "start": null,
+              "end": null,
+              "lang": "zh",
+              "source_kind": "captain-log"
+            }
+          },
+          "evidence": [
+            {
+              "record_id": "VH-10",
+              "quote": "浪高1.6米",
+              "sentence_id": "VH-10#S1",
+              "start": 11,
+              "end": 17,
+              "lang": "zh",
+              "source_kind": "captain-log"
+            }
+          ],
+          "attributes": {
+            "numeric": 1.6,
+            "unit": "米",
+            "ingest_order": 6
+          }
+        },
+        {
+          "id": "OB-VH-10-04-Q",
+          "record_id": "VH-10",
+          "sentence_id": "VH-10#S1",
+          "category": "sea_state",
+          "subject": "sea_state",
+          "key": "sea_state.qualitative",
+          "label": "轻浪",
+          "state": "observed",
+          "value": "轻浪",
+          "time_ref": "18:10",
+          "timestamp": "2026-11-26T18:10:00",
+          "temporal_relation": null,
+          "reference_event": null,
+          "clarification": false,
+          "vessel": {
+            "vessel_id": "V-2",
+            "resolution": "sole_case_vessel_context",
+            "mention": null,
+            "candidates": [],
+            "evidence": {
+              "record_id": "VH-10",
+              "quote": "18:10 风已转东，浪高1.6米，轻浪。",
+              "sentence_id": null,
+              "start": null,
+              "end": null,
+              "lang": "zh",
+              "source_kind": "captain-log"
+            }
+          },
+          "evidence": [
+            {
+              "record_id": "VH-10",
+              "quote": "轻浪。",
+              "sentence_id": "VH-10#S1",
+              "start": 18,
+              "end": 21,
+              "lang": "zh",
+              "source_kind": "captain-log"
+            }
+          ],
+          "attributes": {
+            "ingest_order": 6
+          }
+        }
+      ],
+      "handoff_rule": "只可把 state=met 的条件作为已确认条件下传；required/absent/unknown/conflicting 条件必须继续阻止对应行动。岸站建议和转译批准均不能替代船长命令或岸站许可。"
+    },
+    "provenance": {
+      "mode": "every_claim_and_card_has_evidence",
+      "sentence_lookup": "HandoverStore.trace('<record-id>#S<n>')",
+      "sentences": [
+        {
+          "sentence_id": "VH-5#S1",
+          "record_id": "VH-5",
+          "text": "风转东后再移锚，未收到岸站确认前维持现位。",
+          "start": 0,
+          "end": 21,
+          "lang": "zh"
+        },
+        {
+          "sentence_id": "VH-6#S1",
+          "record_id": "VH-6",
+          "text": "Shore suggests moving after the current gust;",
+          "start": 0,
+          "end": 45,
+          "lang": "en"
+        },
+        {
+          "sentence_id": "VH-6#S2",
+          "record_id": "VH-6",
+          "text": "no clearance has been issued.",
+          "start": 46,
+          "end": 75,
+          "lang": "en"
+        },
+        {
+          "sentence_id": "VH-7#S1",
+          "record_id": "VH-7",
+          "text": "定位每隔几分钟丢一次，时间未记录。",
+          "start": 0,
+          "end": 17,
+          "lang": "zh"
+        },
+        {
+          "sentence_id": "VH-8#S1",
+          "record_id": "VH-8",
+          "text": "译文把该句写作“岸站已批准移锚，可立即执行”，但未附原始许可编号。",
+          "start": 0,
+          "end": 33,
+          "lang": "zh"
+        },
+        {
+          "sentence_id": "VH-9#S1",
+          "record_id": "VH-9",
+          "text": "Shore station: clearance CLR-77 has been issued for the anchor move.",
+          "start": 0,
+          "end": 68,
+          "lang": "en"
+        },
+        {
+          "sentence_id": "VH-10#S1",
+          "record_id": "VH-10",
+          "text": "18:10 风已转东，浪高1.6米，轻浪。",
+          "start": 0,
+          "end": 21,
+          "lang": "zh"
+        },
+        {
+          "sentence_id": "VH-11#S1",
+          "record_id": "VH-11",
+          "text": "设备员澄清：定位间歇发生在移锚之前；",
+          "start": 0,
+          "end": 18,
+          "lang": "zh"
+        },
+        {
+          "sentence_id": "VH-11#S2",
+          "record_id": "VH-11",
+          "text": "当前信号仍需监视。",
+          "start": 18,
+          "end": 27,
+          "lang": "zh"
+        }
+      ]
+    }
+  }
+}

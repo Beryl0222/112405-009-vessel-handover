@@ -1,0 +1,18 @@
+{
+  "records": [
+    {
+      "id": "VH-9",
+      "kind": "shore-message",
+      "lang": "en",
+      "timestamp": "2026-11-26T18:05:00",
+      "text": "Shore station: clearance CLR-77 has been issued for the anchor move."
+    },
+    {
+      "id": "VH-10",
+      "kind": "captain-log",
+      "lang": "zh",
+      "timestamp": "2026-11-26T18:10:00",
+      "text": "18:10 风已转东，浪高1.6米，轻浪。"
+    }
+  ]
+}

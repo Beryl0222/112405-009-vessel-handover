@@ -1,6 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "case-workbench"
-version = "0.1.0"
-description = "合成文本资料工作区"
+version = "0.2.0"
+description = "Auditable multilingual NLP for fictional vessel hand-over texts"
+readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
+
+[project.scripts]
+voyage-handover = "voyage_handover.cli:main"
+
+[tool.setuptools]
+packages = ["voyage_handover"]

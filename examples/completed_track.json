@@ -1,0 +1,11 @@
+{
+  "id": "TRACK-1820",
+  "kind": "track-point",
+  "timestamp": "2026-11-26T18:20:00",
+  "lat": 30.125,
+  "lon": 122.451,
+  "action_key": "shift_anchor",
+  "event": "anchor_move",
+  "completed": true,
+  "source": "fictional voyage track"
+}
